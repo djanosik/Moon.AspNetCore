@@ -9,12 +9,19 @@
 
     "dependencies": {
         "Moon.Contracts": "1.0.7",
-        "System.Net.Http": "4.0.0-beta-22816",
         "Microsoft.AspNet.Mvc": "6.0.0-beta4"
     },
 
     "frameworks": {
-        "dnx46": { },
-        "dnxcore50": { }
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0"
+            }
+        },
+        "dnxcore50": {
+            "dependencies": {
+                "System.Net.Http": "4.0.0-beta-22816"
+            }
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace Moon.AspNet
             var targetUrl = GetUrl(context);
             context.Response.Redirect(targetUrl, true);
 
-            return Task.CompletedTask;
+            return Task.FromResult(true);
         }
 
         string GetHostName(HttpContext context)
