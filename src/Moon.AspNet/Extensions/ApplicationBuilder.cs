@@ -7,7 +7,7 @@ namespace Microsoft.AspNet.Builder
     /// <summary>
     /// <see cref="IApplicationBuilder" /> extension methods.
     /// </summary>
-    public static class AppBuilderExtensions
+    public static class ApplicationBuilderExtensions
     {
         /// <summary>
         /// Redirects request to preferred host name when not-matching host name is detected.
