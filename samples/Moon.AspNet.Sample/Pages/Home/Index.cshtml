@@ -1,0 +1,13 @@
+﻿@using Moon.AspNet
+@using Moon.AspNet.Sample.Pages.Home
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Moon.AspNet Sample</title>
+</head>
+<body>
+    <textarea rows="15" cols="50">@Json.Serialize(Model.Items)</textarea>
+</body>
+</html>
