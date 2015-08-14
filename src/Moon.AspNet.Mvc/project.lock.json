@@ -353,29 +353,6 @@
           "lib/dnx451/Microsoft.AspNet.JsonPatch.dll": {}
         }
       },
-      "Microsoft.AspNet.Loader.IIS/1.0.0-beta6": {
-        "dependencies": {
-          "Microsoft.AspNet.DataProtection.Abstractions": "1.0.0-beta6",
-          "Microsoft.AspNet.Hosting": "1.0.0-beta6",
-          "Microsoft.Framework.Configuration.EnvironmentVariables": "1.0.0-beta6",
-          "Microsoft.Framework.Configuration.Ini": "1.0.0-beta6",
-          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta6",
-          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta6"
-        },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "mscorlib",
-          "System",
-          "System.Core"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Loader.IIS.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Loader.IIS.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Loader.IIS.Interop/1.0.0-beta6": {},
       "Microsoft.AspNet.Localization/1.0.0-beta6": {
         "dependencies": {
           "Microsoft.AspNet.Http.Extensions": "1.0.0-beta6",
@@ -688,12 +665,6 @@
         },
         "runtime": {
           "lib/dnx451/Microsoft.AspNet.Routing.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Server.IIS/1.0.0-beta6": {
-        "dependencies": {
-          "Microsoft.AspNet.Loader.IIS": "1.0.0-beta6",
-          "Microsoft.AspNet.Loader.IIS.Interop": "1.0.0-beta6"
         }
       },
       "Microsoft.AspNet.WebUtilities/1.0.0-beta6": {
@@ -1493,32 +1464,6 @@
           "lib/dnxcore50/Microsoft.AspNet.JsonPatch.dll": {}
         }
       },
-      "Microsoft.AspNet.Loader.IIS/1.0.0-beta6": {
-        "dependencies": {
-          "Microsoft.AspNet.DataProtection.Abstractions": "1.0.0-beta6",
-          "Microsoft.AspNet.Hosting": "1.0.0-beta6",
-          "Microsoft.Framework.Configuration.EnvironmentVariables": "1.0.0-beta6",
-          "Microsoft.Framework.Configuration.Ini": "1.0.0-beta6",
-          "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta6",
-          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta6",
-          "Microsoft.Win32.Registry": "4.0.0-beta-23109",
-          "System.Diagnostics.Process": "4.0.0-beta-23109",
-          "System.Net.NetworkInformation": "4.0.10-beta-23109",
-          "System.Reflection.Extensions": "4.0.0-beta-23109",
-          "System.Security.Principal.Windows": "4.0.0-beta-23109",
-          "System.Text.Encoding": "4.0.10-beta-23109",
-          "System.Text.Encoding.Extensions": "4.0.10-beta-23109",
-          "System.Threading": "4.0.10-beta-23109",
-          "System.Threading.ThreadPool": "4.0.10-beta-23109"
-        },
-        "compile": {
-          "lib/dnxcore50/Microsoft.AspNet.Loader.IIS.dll": {}
-        },
-        "runtime": {
-          "lib/dnxcore50/Microsoft.AspNet.Loader.IIS.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Loader.IIS.Interop/1.0.0-beta6": {},
       "Microsoft.AspNet.Localization/1.0.0-beta6": {
         "dependencies": {
           "Microsoft.AspNet.Http.Extensions": "1.0.0-beta6",
@@ -1764,12 +1709,6 @@
         },
         "runtime": {
           "lib/dnxcore50/Microsoft.AspNet.Routing.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Server.IIS/1.0.0-beta6": {
-        "dependencies": {
-          "Microsoft.AspNet.Loader.IIS": "1.0.0-beta6",
-          "Microsoft.AspNet.Loader.IIS.Interop": "1.0.0-beta6"
         }
       },
       "Microsoft.AspNet.WebUtilities/1.0.0-beta6": {
@@ -2421,35 +2360,6 @@
           "lib/DNXCore50/System.Diagnostics.Debug.dll": {}
         }
       },
-      "System.Diagnostics.Process/4.0.0-beta-23109": {
-        "dependencies": {
-          "Microsoft.Win32.Primitives": "4.0.0-beta-23109",
-          "Microsoft.Win32.Registry": "4.0.0-beta-23109",
-          "System.Collections": "4.0.10-beta-23109",
-          "System.Globalization": "4.0.10-beta-23109",
-          "System.IO": "4.0.10-beta-23109",
-          "System.IO.FileSystem": "4.0.0-beta-23109",
-          "System.IO.FileSystem.Primitives": "4.0.0-beta-23109",
-          "System.Resources.ResourceManager": "4.0.0-beta-23109",
-          "System.Runtime": "4.0.20-beta-23109",
-          "System.Runtime.Extensions": "4.0.10-beta-23109",
-          "System.Runtime.Handles": "4.0.0-beta-23109",
-          "System.Runtime.InteropServices": "4.0.20-beta-23109",
-          "System.Security.SecureString": "4.0.0-beta-23109",
-          "System.Text.Encoding": "4.0.10-beta-23109",
-          "System.Text.Encoding.Extensions": "4.0.10-beta-23109",
-          "System.Threading": "4.0.10-beta-23109",
-          "System.Threading.Tasks": "4.0.10-beta-23109",
-          "System.Threading.Thread": "4.0.0-beta-23109",
-          "System.Threading.ThreadPool": "4.0.10-beta-23109"
-        },
-        "compile": {
-          "ref/dotnet/System.Diagnostics.Process.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Diagnostics.Process.dll": {}
-        }
-      },
       "System.Diagnostics.Tools/4.0.0-beta-23109": {
         "dependencies": {
           "System.Runtime": "4.0.0-beta-23109"
@@ -2668,17 +2578,6 @@
         },
         "runtime": {
           "lib/DNXCore50/System.Net.Http.dll": {}
-        }
-      },
-      "System.Net.NetworkInformation/4.0.10-beta-23109": {
-        "dependencies": {
-          "System.Private.Networking": "4.0.0-beta-23109"
-        },
-        "compile": {
-          "ref/dotnet/System.Net.NetworkInformation.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Net.NetworkInformation.dll": {}
         }
       },
       "System.Net.Primitives/4.0.10": {
@@ -3136,22 +3035,6 @@
           "lib/DNXCore50/System.Security.Principal.Windows.dll": {}
         }
       },
-      "System.Security.SecureString/4.0.0-beta-23109": {
-        "dependencies": {
-          "System.Resources.ResourceManager": "4.0.0-beta-23109",
-          "System.Runtime": "4.0.20-beta-23109",
-          "System.Runtime.Handles": "4.0.0-beta-23109",
-          "System.Runtime.InteropServices": "4.0.20-beta-23109",
-          "System.Security.Cryptography.Encryption": "4.0.0-beta-23109",
-          "System.Threading": "4.0.10-beta-23109"
-        },
-        "compile": {
-          "ref/dotnet/System.Security.SecureString.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Security.SecureString.dll": {}
-        }
-      },
       "System.Text.Encoding/4.0.10": {
         "dependencies": {
           "System.Runtime": "4.0.0"
@@ -3253,18 +3136,6 @@
         },
         "runtime": {
           "lib/DNXCore50/System.Threading.Thread.dll": {}
-        }
-      },
-      "System.Threading.ThreadPool/4.0.10-beta-23109": {
-        "dependencies": {
-          "System.Runtime": "4.0.0-beta-23109",
-          "System.Runtime.InteropServices": "4.0.0-beta-23109"
-        },
-        "compile": {
-          "ref/dotnet/System.Threading.ThreadPool.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Threading.ThreadPool.dll": {}
         }
       },
       "System.Xml.ReaderWriter/4.0.10-beta-23109": {
@@ -3591,31 +3462,6 @@
         "repo.json"
       ]
     },
-    "Microsoft.AspNet.Loader.IIS/1.0.0-beta6": {
-      "serviceable": true,
-      "sha512": "KgthERynEAHQDonKXUIbgDMO4K0/Z0sMr/RsgdHJ1B+0zu2FJNUmvcDqIxnqnGx0nGqpZdkZUV9bHvjsRsM+Jg==",
-      "files": [
-        "lib/dnx451/Microsoft.AspNet.Loader.IIS.dll",
-        "lib/dnx451/Microsoft.AspNet.Loader.IIS.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Loader.IIS.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Loader.IIS.xml",
-        "Microsoft.AspNet.Loader.IIS.1.0.0-beta6.nupkg",
-        "Microsoft.AspNet.Loader.IIS.1.0.0-beta6.nupkg.sha512",
-        "Microsoft.AspNet.Loader.IIS.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.Loader.IIS.Interop/1.0.0-beta6": {
-      "serviceable": true,
-      "sha512": "uHMUbBxd47RRMjgnRUulTcOfmF+O++DWcFtBg75uD+ZDMWfHqXKd8pSsaAVDa0PLfzye+bobYezPyAvzi742EA==",
-      "files": [
-        "InteropAssemblies/amd64/Microsoft.AspNet.Loader.IIS.Interop.dll",
-        "InteropAssemblies/x86/Microsoft.AspNet.Loader.IIS.Interop.dll",
-        "Microsoft.AspNet.Loader.IIS.Interop.1.0.0-beta6.nupkg",
-        "Microsoft.AspNet.Loader.IIS.Interop.1.0.0-beta6.nupkg.sha512",
-        "Microsoft.AspNet.Loader.IIS.Interop.nuspec",
-        "tools/AspNet.Loader.dll"
-      ]
-    },
     "Microsoft.AspNet.Localization/1.0.0-beta6": {
       "sha512": "sBoX+2jaaA2yIy/n5eUAjq6JfYowq+2vJoOf4Od8ycBv4eyvajUTkQv/QUP+w+4BvWnkiB2/ak96BdiaFiztog==",
       "files": [
@@ -3838,14 +3684,6 @@
         "Microsoft.AspNet.Routing.1.0.0-beta6.nupkg.sha512",
         "Microsoft.AspNet.Routing.nuspec",
         "repo.json"
-      ]
-    },
-    "Microsoft.AspNet.Server.IIS/1.0.0-beta6": {
-      "sha512": "iQn5326ofZynrM27XTzd7+IPCg1ZxQT6N/UlhcBJCfBrOh5/MlKG5sHkyPoJFlkNqyuAo1QK+gTW8WibmOy6Zg==",
-      "files": [
-        "Microsoft.AspNet.Server.IIS.1.0.0-beta6.nupkg",
-        "Microsoft.AspNet.Server.IIS.1.0.0-beta6.nupkg.sha512",
-        "Microsoft.AspNet.Server.IIS.nuspec"
       ]
     },
     "Microsoft.AspNet.WebUtilities/1.0.0-beta6": {
@@ -4689,29 +4527,6 @@
         "System.Diagnostics.Debug.nuspec"
       ]
     },
-    "System.Diagnostics.Process/4.0.0-beta-23109": {
-      "serviceable": true,
-      "sha512": "egXQs1Y9umuDpVA2Eusger3DHZ92fXfnzYYiLXkE41IIKeabuBo3cAMCzA00LCU9lr/tmaPiebGTSmXzGHHqCw==",
-      "files": [
-        "lib/DNXCore50/System.Diagnostics.Process.dll",
-        "lib/net46/System.Diagnostics.Process.dll",
-        "ref/dotnet/de/System.Diagnostics.Process.xml",
-        "ref/dotnet/es/System.Diagnostics.Process.xml",
-        "ref/dotnet/fr/System.Diagnostics.Process.xml",
-        "ref/dotnet/it/System.Diagnostics.Process.xml",
-        "ref/dotnet/ja/System.Diagnostics.Process.xml",
-        "ref/dotnet/ko/System.Diagnostics.Process.xml",
-        "ref/dotnet/ru/System.Diagnostics.Process.xml",
-        "ref/dotnet/System.Diagnostics.Process.dll",
-        "ref/dotnet/System.Diagnostics.Process.xml",
-        "ref/dotnet/zh-hans/System.Diagnostics.Process.xml",
-        "ref/dotnet/zh-hant/System.Diagnostics.Process.xml",
-        "ref/net46/System.Diagnostics.Process.dll",
-        "System.Diagnostics.Process.4.0.0-beta-23109.nupkg",
-        "System.Diagnostics.Process.4.0.0-beta-23109.nupkg.sha512",
-        "System.Diagnostics.Process.nuspec"
-      ]
-    },
     "System.Diagnostics.Tools/4.0.0-beta-23109": {
       "serviceable": true,
       "sha512": "xJ35u8Z+UvepCNefKZEmtrnVfooyRL6/VIigu/IUOMr98W4O7ohLuQc2yMRHRxl4whzD0JNUgGV+Fsgal4o4mQ==",
@@ -5140,28 +4955,6 @@
         "System.Net.Http.4.0.0.nupkg",
         "System.Net.Http.4.0.0.nupkg.sha512",
         "System.Net.Http.nuspec"
-      ]
-    },
-    "System.Net.NetworkInformation/4.0.10-beta-23109": {
-      "sha512": "+C52hc3iiBzD+9C8yshLnUoUE6fo3DGkeoUn0ybMfT5VBDLcCMLlx0MVvJf+tfU7JpA1nUyYxWtWxcnFtbgZ8w==",
-      "files": [
-        "lib/DNXCore50/System.Net.NetworkInformation.dll",
-        "lib/net46/_._",
-        "ref/dotnet/de/System.Net.NetworkInformation.xml",
-        "ref/dotnet/es/System.Net.NetworkInformation.xml",
-        "ref/dotnet/fr/System.Net.NetworkInformation.xml",
-        "ref/dotnet/it/System.Net.NetworkInformation.xml",
-        "ref/dotnet/ja/System.Net.NetworkInformation.xml",
-        "ref/dotnet/ko/System.Net.NetworkInformation.xml",
-        "ref/dotnet/ru/System.Net.NetworkInformation.xml",
-        "ref/dotnet/System.Net.NetworkInformation.dll",
-        "ref/dotnet/System.Net.NetworkInformation.xml",
-        "ref/dotnet/zh-hans/System.Net.NetworkInformation.xml",
-        "ref/dotnet/zh-hant/System.Net.NetworkInformation.xml",
-        "ref/net46/_._",
-        "System.Net.NetworkInformation.4.0.10-beta-23109.nupkg",
-        "System.Net.NetworkInformation.4.0.10-beta-23109.nupkg.sha512",
-        "System.Net.NetworkInformation.nuspec"
       ]
     },
     "System.Net.Primitives/4.0.10": {
@@ -5957,29 +5750,6 @@
         "System.Security.Principal.Windows.nuspec"
       ]
     },
-    "System.Security.SecureString/4.0.0-beta-23109": {
-      "serviceable": true,
-      "sha512": "tWPLnKM8qIqAWrmSr096HmjzL7S4KIHTVF3FBFj/TzNJiSYK7SWx6PhbuiRPwKxRRjXERe9WSN+VJOBfS4bMug==",
-      "files": [
-        "lib/DNXCore50/System.Security.SecureString.dll",
-        "lib/net46/System.Security.SecureString.dll",
-        "ref/dotnet/de/System.Security.SecureString.xml",
-        "ref/dotnet/es/System.Security.SecureString.xml",
-        "ref/dotnet/fr/System.Security.SecureString.xml",
-        "ref/dotnet/it/System.Security.SecureString.xml",
-        "ref/dotnet/ja/System.Security.SecureString.xml",
-        "ref/dotnet/ko/System.Security.SecureString.xml",
-        "ref/dotnet/ru/System.Security.SecureString.xml",
-        "ref/dotnet/System.Security.SecureString.dll",
-        "ref/dotnet/System.Security.SecureString.xml",
-        "ref/dotnet/zh-hans/System.Security.SecureString.xml",
-        "ref/dotnet/zh-hant/System.Security.SecureString.xml",
-        "ref/net46/System.Security.SecureString.dll",
-        "System.Security.SecureString.4.0.0-beta-23109.nupkg",
-        "System.Security.SecureString.4.0.0-beta-23109.nupkg.sha512",
-        "System.Security.SecureString.nuspec"
-      ]
-    },
     "System.Text.Encoding/4.0.10": {
       "sha512": "fNlSFgy4OuDlJrP9SFFxMlaLazq6ipv15sU5TiEgg9UCVnA/OgoVUfymFp4AOk1jOkW5SVxWbeeIUptcM+m/Vw==",
       "files": [
@@ -6209,28 +5979,6 @@
         "System.Threading.Thread.nuspec"
       ]
     },
-    "System.Threading.ThreadPool/4.0.10-beta-23109": {
-      "sha512": "XGpa2jjxtujG3OtihIB/CjUWzdeLG7JfiYVglGZPLD5lfZ2qXnytY7rjrqg3CTNy//ZwTPVv/589euO6PmchUw==",
-      "files": [
-        "lib/DNXCore50/System.Threading.ThreadPool.dll",
-        "lib/net46/System.Threading.ThreadPool.dll",
-        "ref/dotnet/de/System.Threading.ThreadPool.xml",
-        "ref/dotnet/es/System.Threading.ThreadPool.xml",
-        "ref/dotnet/fr/System.Threading.ThreadPool.xml",
-        "ref/dotnet/it/System.Threading.ThreadPool.xml",
-        "ref/dotnet/ja/System.Threading.ThreadPool.xml",
-        "ref/dotnet/ko/System.Threading.ThreadPool.xml",
-        "ref/dotnet/ru/System.Threading.ThreadPool.xml",
-        "ref/dotnet/System.Threading.ThreadPool.dll",
-        "ref/dotnet/System.Threading.ThreadPool.xml",
-        "ref/dotnet/zh-hans/System.Threading.ThreadPool.xml",
-        "ref/dotnet/zh-hant/System.Threading.ThreadPool.xml",
-        "ref/net46/System.Threading.ThreadPool.dll",
-        "System.Threading.ThreadPool.4.0.10-beta-23109.nupkg",
-        "System.Threading.ThreadPool.4.0.10-beta-23109.nupkg.sha512",
-        "System.Threading.ThreadPool.nuspec"
-      ]
-    },
     "System.Xml.ReaderWriter/4.0.10-beta-23109": {
       "serviceable": true,
       "sha512": "S9vd6yE+eohuWs8UPMis6HFCMP2NwYHrqVUbdEiwKjsk+ei0OQcVUJOn9C/kzq+HPQf5AYlNfNOP7eKiPYStTg==",
@@ -6280,8 +6028,8 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.AspNet.Server.IIS >= 1.0.0-beta6",
-      "Moon.AspNet.Mvc >= 1.0.0-ci"
+      "Moon.AspNet >= 1.0.0-ci",
+      "Microsoft.AspNet.Mvc >= 6.0.0-beta6"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []

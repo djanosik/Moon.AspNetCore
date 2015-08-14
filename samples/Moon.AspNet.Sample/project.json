@@ -4,7 +4,7 @@
 
   "dependencies": {
     "Microsoft.AspNet.Server.IIS": "1.0.0-beta6",
-    "Moon.AspNet": "1.0.0-ci"
+    "Moon.AspNet.Mvc": "1.0.0-ci"
   },
 
   "frameworks": {
