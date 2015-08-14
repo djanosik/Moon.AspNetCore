@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNet.Mvc.Razor;
-using Microsoft.AspNet.Mvc.Razor.OptionDescriptors;
+using Microsoft.Framework.OptionsModel;
 
 namespace Moon.AspNet
 {
@@ -25,10 +25,10 @@ namespace Moon.AspNet
         /// </summary>
         /// <param name="pageFactory">The page factory.</param>
         /// <param name="viewFactory">The view factory.</param>
-        /// <param name="viewLocationExpanderProvider">The view location expander.</param>
+        /// <param name="optionsAccessor">The view engine options accessor.</param>
         /// <param name="viewLocationCache">The view location cache.</param>
-        public PagesViewEngine(IRazorPageFactory pageFactory, IRazorViewFactory viewFactory, IViewLocationExpanderProvider viewLocationExpanderProvider, IViewLocationCache viewLocationCache)
-            : base(pageFactory, viewFactory, viewLocationExpanderProvider, viewLocationCache)
+        public PagesViewEngine(IRazorPageFactory pageFactory, IRazorViewFactory viewFactory, IOptions<RazorViewEngineOptions> optionsAccessor, IViewLocationCache viewLocationCache)
+            : base(pageFactory, viewFactory, optionsAccessor, viewLocationCache)
         {
         }
 

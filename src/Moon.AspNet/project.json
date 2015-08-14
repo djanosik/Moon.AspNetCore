@@ -8,8 +8,8 @@
     "tags": [ "moontea", "aspnet" ],
 
     "dependencies": {
-        "Moon.Contracts": "1.0.7",
-        "Microsoft.AspNet.Mvc": "6.0.0-beta4"
+        "Moon.Contracts": "1.1.1",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta6"
     },
 
     "frameworks": {
@@ -20,7 +20,7 @@
         },
         "dnxcore50": {
             "dependencies": {
-                "System.Net.Http": "4.0.0-beta-22816"
+                "System.Net.Http": "4.0.0"
             }
         }
     }

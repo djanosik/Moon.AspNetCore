@@ -9,7 +9,7 @@ namespace Moon.AspNet.Sample
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().Configure<MvcOptions>(o =>
+            services.AddMvc().ConfigureMvcViews(o =>
             {
                 o.ViewEngines.Clear();
                 o.ViewEngines.Add(typeof(PagesViewEngine));
