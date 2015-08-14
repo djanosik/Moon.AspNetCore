@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Mvc;
 using Microsoft.Framework.DependencyInjection;
+using Moon.AspNet.Mvc;
 
 namespace Moon.AspNet.Sample
 {

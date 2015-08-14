@@ -2,7 +2,7 @@
 using Microsoft.AspNet.Mvc.Razor;
 using Microsoft.Framework.OptionsModel;
 
-namespace Moon.AspNet
+namespace Moon.AspNet.Mvc
 {
     /// <summary>
     /// Represents a Razor view engine that looks for views in the ~/Server/ folder.
