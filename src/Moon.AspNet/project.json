@@ -8,18 +8,14 @@
   "tags": [ "moontea", "aspnet" ],
 
   "dependencies": {
-    "Moon.Contracts": "1.1.2",
     "Microsoft.AspNet.Hosting": "1.0.0-beta6",
-    "System.Net.Http": "4.0.0",
-    "Newtonsoft.Json": "7.0.1"
+    "Moon.Contracts": "1.1.3",
+    "Newtonsoft.Json": "7.0.1",
+    "System.Net.Http": "4.0.0"
   },
 
   "frameworks": {
-    "dnx46": {
-      "frameworkAssemblies": {
-        "System.Runtime": "4.0.20.0"
-      }
-    },
+    "dnx451": { },
     "dnxcore50": { }
   }
 }

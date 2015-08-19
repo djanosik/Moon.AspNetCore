@@ -2,7 +2,7 @@
   "locked": false,
   "version": 1,
   "targets": {
-    "DNX,Version=v4.6": {
+    "DNX,Version=v4.5.1": {
       "Microsoft.AspNet.Antiforgery/1.0.0-beta6": {
         "dependencies": {
           "Microsoft.AspNet.DataProtection": "1.0.0-beta6",
@@ -1092,16 +1092,18 @@
           "lib/dnx451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Moon.Contracts/1.1.2": {
-        "dependencies": {
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.10"
-        },
+      "Moon.Contracts/1.1.3": {
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
         "compile": {
-          "lib/dotnet/Moon.Contracts.dll": {}
+          "lib/dnx451/Moon.Contracts.dll": {}
         },
         "runtime": {
-          "lib/dotnet/Moon.Contracts.dll": {}
+          "lib/dnx451/Moon.Contracts.dll": {}
         }
       },
       "Newtonsoft.Json/7.0.1": {
@@ -1120,14 +1122,6 @@
           "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
         }
       },
-      "System.Linq/4.0.0": {
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
       "System.Net.Http/4.0.0": {
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -1137,14 +1131,6 @@
         },
         "runtime": {
           "lib/net45/_._": {}
-        }
-      },
-      "System.Reflection/4.0.10": {
-        "compile": {
-          "ref/net46/_._": {}
-        },
-        "runtime": {
-          "lib/net46/_._": {}
         }
       },
       "System.Reflection.Metadata/1.0.21": {
@@ -2190,7 +2176,7 @@
           "lib/DNXCore50/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "Moon.Contracts/1.1.2": {
+      "Moon.Contracts/1.1.3": {
         "dependencies": {
           "System.Linq": "4.0.0",
           "System.Reflection": "4.0.10"
@@ -4196,14 +4182,18 @@
         "ref/net46/Microsoft.Win32.Registry.dll"
       ]
     },
-    "Moon.Contracts/1.1.2": {
+    "Moon.Contracts/1.1.3": {
       "serviceable": true,
-      "sha512": "/wzl58dzhuivnItAr9jZl+KTK5A1FAmjjKMLSFsl3mNaoSIIgvjPL/DY91eYGb+BOvTG9TXOELJUsyYltA4zXQ==",
+      "sha512": "M3+05AsW2BXMbiya4FpJCEzjaGbzeCf2Tg/eBEklyb6UX+s+FroC6DQEsbh/+pMjXDG9CDbEWlLvqaTM/TyE+Q==",
       "files": [
+        "lib/dnx451/Moon.Contracts.dll",
+        "lib/dnx451/Moon.Contracts.xml",
         "lib/dotnet/Moon.Contracts.dll",
         "lib/dotnet/Moon.Contracts.xml",
-        "Moon.Contracts.1.1.2.nupkg",
-        "Moon.Contracts.1.1.2.nupkg.sha512",
+        "lib/net451/Moon.Contracts.dll",
+        "lib/net451/Moon.Contracts.xml",
+        "Moon.Contracts.1.1.3.nupkg",
+        "Moon.Contracts.1.1.3.nupkg.sha512",
         "Moon.Contracts.nuspec"
       ]
     },
@@ -6051,7 +6041,7 @@
       "Moon.AspNet >= 1.0.0-ci",
       "Microsoft.AspNet.Mvc >= 6.0.0-beta6"
     ],
-    "DNX,Version=v4.6": [],
+    "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
   }
 }
