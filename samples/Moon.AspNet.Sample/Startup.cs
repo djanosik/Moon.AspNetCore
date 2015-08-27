@@ -8,15 +8,6 @@ namespace Moon.AspNet.Sample
 {
     public class Startup
     {
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddMvc().ConfigureMvcViews(o =>
-            {
-                o.ViewEngines.Clear();
-                o.ViewEngines.Add(typeof(PagesViewEngine));
-            });
-        }
-
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (!env.IsForDevelopment())
@@ -25,6 +16,15 @@ namespace Moon.AspNet.Sample
             }
 
             app.UseMvc();
+        }
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddMvc().ConfigureMvcViews(o =>
+            {
+                o.ViewEngines.Clear();
+                o.ViewEngines.Add(typeof(PagesViewEngine));
+            });
         }
     }
 }

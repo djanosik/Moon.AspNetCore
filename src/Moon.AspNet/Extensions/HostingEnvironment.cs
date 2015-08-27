@@ -12,6 +12,14 @@ namespace Microsoft.AspNet.Hosting
         /// </summary>
         /// <param name="env">The environment.</param>
         public static bool IsForDevelopment(this IHostingEnvironment env)
-            => string.Equals(env.EnvironmentName, "Development", StringComparison.OrdinalIgnoreCase);
+            => env.IsFor("Development");
+
+        /// <summary>
+        /// Returns whether this is a specified environment.
+        /// </summary>
+        /// <param name="env">The hosting environment.</param>
+        /// <param name="environment">The environment name (case-insensitive).</param>
+        public static bool IsFor(this IHostingEnvironment env, string environment)
+            => string.Equals(env.EnvironmentName, environment, StringComparison.OrdinalIgnoreCase);
     }
 }
