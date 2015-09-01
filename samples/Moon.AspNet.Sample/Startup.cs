@@ -10,7 +10,7 @@ namespace Moon.AspNet.Sample
     {
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (!env.IsForDevelopment())
+            if (!env.IsDevelopment())
             {
                 app.UseOneHostName("domain.com");
             }
