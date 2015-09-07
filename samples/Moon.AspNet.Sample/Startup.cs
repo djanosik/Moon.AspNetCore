@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNet.Mvc.Razor;
 using Microsoft.Framework.DependencyInjection;
 using Moon.AspNet.Mvc;
 
@@ -20,11 +20,8 @@ namespace Moon.AspNet.Sample
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().ConfigureMvcViews(o =>
-            {
-                o.ViewEngines.Clear();
-                o.ViewEngines.Add(typeof(PagesViewEngine));
-            });
+            services.AddMvc();
+            services.AddSingleton<IRazorViewEngine, PagesViewEngine>();
         }
     }
 }

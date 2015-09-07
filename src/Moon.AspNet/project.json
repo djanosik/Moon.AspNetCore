@@ -8,10 +8,10 @@
   "tags": [ "moontea", "aspnet" ],
 
   "dependencies": {
-    "Microsoft.AspNet.Hosting": "1.0.0-beta6",
-    "Moon.Contracts": "1.1.5",
+    "Microsoft.AspNet.Hosting": "1.0.0-beta7",
+    "Moon.Contracts": "1.1.7",
     "Newtonsoft.Json": "7.0.1",
-    "System.Net.Http": "4.0.0"
+    "System.Net.Http": "4.0.1-beta-23225"
   },
 
   "frameworks": {
