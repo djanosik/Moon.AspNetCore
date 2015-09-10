@@ -28,13 +28,11 @@ namespace Microsoft.AspNet.Builder
             Requires.NotNullOrWhiteSpace(hostName, nameof(hostName));
             Requires.NotNull(pattern, nameof(pattern));
 
-            var options = new OneHostNameOptions
+            return app.UseMiddleware<OneHostNameMiddleware>(new OneHostNameOptions
             {
                 HostName = hostName,
                 Pattern = new Regex(pattern, RegexOptions.Singleline)
-            };
-
-            return app.UseMiddleware<OneHostNameMiddleware>(options);
+            });
         }
 
         static string GetPattern(string hostName)

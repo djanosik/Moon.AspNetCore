@@ -17,7 +17,7 @@ namespace Moon.AspNet
         /// Initializes a new instance of the <see cref="OneHostNameMiddleware" /> class
         /// </summary>
         /// <param name="next">The next middleware.</param>
-        /// <param name="options">The options.</param>
+        /// <param name="options">The middleware options.</param>
         public OneHostNameMiddleware(RequestDelegate next, OneHostNameOptions options)
         {
             this.next = next;
@@ -25,7 +25,7 @@ namespace Moon.AspNet
         }
 
         /// <summary>
-        /// Processes a requests and redirects to the preferred host name.
+        /// Processes a request and redirects to the preferred host name.
         /// </summary>
         /// <param name="context">The HTTP settings.</param>
         public Task Invoke(HttpContext context)

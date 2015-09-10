@@ -1,8 +1,9 @@
 ﻿using System;
 using Microsoft.AspNet.Builder;
 using Microsoft.Framework.OptionsModel;
+using Moon.AspNet.Authentication.Basic;
 
-namespace Moon.AspNet.Authentication.Basic
+namespace Microsoft.AspNet.Builder
 {
     /// <summary>
     /// <see cref="IApplicationBuilder" /> extension methods.
@@ -24,21 +25,5 @@ namespace Moon.AspNet.Authentication.Basic
         /// <param name="options">&gt;The middleware options configuration.</param>
         public static IApplicationBuilder UseBasicAuthentication(this IApplicationBuilder app, IOptions<BasicAuthenticationOptions> options)
             => app.UseMiddleware<BasicAuthenticationMiddleware>(options, new ConfigureOptions<BasicAuthenticationOptions>(o => { }));
-
-        ///// <summary>
-        ///// Adds MS-OFBA authentication middleware to the OWIN pipeline.
-        ///// </summary>
-        //public static IAppBuilder UseMicrosoftOfficeFormsBasedAuthentication(this IAppBuilder app, MSOFBAuthenticationOptions options)
-        //    => app.Use<MSOFBAuthenticationMiddleware>(options);
-
-        ///// <summary>
-        ///// Adds MS-OFBA authentication middleware to the OWIN pipeline.
-        ///// </summary>
-        //public static IAppBuilder UseMicrosoftOfficeFormsBasedAuthentication(this IAppBuilder app, string loginPath, string loginSuccessPath = "/")
-        //    => app.UseMicrosoftOfficeFormsBasedAuthentication(new MSOFBAuthenticationOptions
-        //    {
-        //        LoginPath = new PathString(loginPath),
-        //        LoginSuccessPath = new PathString(loginSuccessPath)
-        //    });
     }
 }
