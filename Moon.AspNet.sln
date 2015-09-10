@@ -25,6 +25,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Moon.AspNet.Sample", "sampl
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Moon.AspNet.Mvc", "src\Moon.AspNet.Mvc\Moon.AspNet.Mvc.xproj", "{984D3543-225D-4049-996F-2B2CBE128F57}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Moon.AspNet.Authentication.Basic", "src\Moon.AspNet.Authentication.Basic\Moon.AspNet.Authentication.Basic.xproj", "{C3E342E1-AD85-4CFA-BE87-664402D64835}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{984D3543-225D-4049-996F-2B2CBE128F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{984D3543-225D-4049-996F-2B2CBE128F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{984D3543-225D-4049-996F-2B2CBE128F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E342E1-AD85-4CFA-BE87-664402D64835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E342E1-AD85-4CFA-BE87-664402D64835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E342E1-AD85-4CFA-BE87-664402D64835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E342E1-AD85-4CFA-BE87-664402D64835}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +57,6 @@ Global
 		{6E1E806B-E035-4220-B6B5-972A24C1EAD9} = {4D228D77-9F07-4157-9F50-C95B41A4203F}
 		{58123F6C-D9C7-43E6-B9D9-BECF408C4768} = {4C0F7C6B-9CA6-4398-BCA0-4B8376B4E49C}
 		{984D3543-225D-4049-996F-2B2CBE128F57} = {4D228D77-9F07-4157-9F50-C95B41A4203F}
+		{C3E342E1-AD85-4CFA-BE87-664402D64835} = {4D228D77-9F07-4157-9F50-C95B41A4203F}
 	EndGlobalSection
 EndGlobal
