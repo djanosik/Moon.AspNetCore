@@ -12,6 +12,7 @@ namespace Moon.AspNet.Authentication.Basic
     public class BasicAuthenticationMiddleware : AuthenticationMiddleware<BasicAuthenticationOptions>
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="BasicAuthenticationMiddleware" /> class.
         /// </summary>
         /// <param name="next">The next middleware.</param>
         /// <param name="options">The middleware options.</param>
