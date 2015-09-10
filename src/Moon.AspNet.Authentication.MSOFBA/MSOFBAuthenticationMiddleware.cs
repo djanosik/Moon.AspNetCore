@@ -25,7 +25,7 @@ namespace Moon.AspNet.Authentication.MSOFBA
         }
 
         /// <summary>
-        /// Processes a request and invokes the MS-OFBA authentication handlers.
+        /// Processes a request and enables the MS-OFBA authentication.
         /// </summary>
         /// <param name="context">The HTTP settings.</param>
         public async Task Invoke(HttpContext context)
