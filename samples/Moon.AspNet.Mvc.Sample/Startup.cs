@@ -4,7 +4,7 @@ using Microsoft.AspNet.Mvc.Razor;
 using Microsoft.Framework.DependencyInjection;
 using Moon.AspNet.Mvc;
 
-namespace Moon.AspNet.Sample
+namespace Moon.AspNet.Mvc.Sample
 {
     public class Startup
     {

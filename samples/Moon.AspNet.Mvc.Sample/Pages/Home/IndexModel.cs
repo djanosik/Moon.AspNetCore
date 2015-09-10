@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Moon.AspNet.Sample.Pages.Home
+namespace Moon.AspNet.Mvc.Sample.Pages.Home
 {
     public class IndexModel
     {
