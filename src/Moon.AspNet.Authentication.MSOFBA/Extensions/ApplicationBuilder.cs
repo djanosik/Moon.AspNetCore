@@ -13,7 +13,7 @@ namespace Microsoft.AspNet.Builder
         /// </summary>
         /// <param name="app">The application builder.</param>
         /// <param name="configureOptions">The middleware options configuration.</param>
-        public static IApplicationBuilder UseMicrosoftOfficeFormsBasedAuthentication(this IApplicationBuilder app, Action<MSOFBAuthenticationOptions> configureOptions = null)
+        public static IApplicationBuilder UseMSOFBAuthentication(this IApplicationBuilder app, Action<MSOFBAuthenticationOptions> configureOptions = null)
         {
             var options = new MSOFBAuthenticationOptions();
 
