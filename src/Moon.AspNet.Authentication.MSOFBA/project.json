@@ -4,7 +4,7 @@
   "owners": [ "djanosik" ],
   "projectUrl": "https://github.com/djanosik/Moon.AspNet",
   "iconUrl": "http://moontea.net/moon.png",
-  "description": "ASP.NET middleware that enables an application to use MS-OFBA authentication.",
+  "description": "ASP.NET 5 middleware that enables an application to use MS-OFBA authentication.",
   "tags": [ "moontea", "aspnet", "authentication", "msofba" ],
 
   "dependencies": {

@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.0-ci",
+  "authors": [ "Dusan Janosik" ],
+  "owners": [ "djanosik" ],
+  "projectUrl": "https://github.com/djanosik/Moon.AspNet",
+  "iconUrl": "http://moontea.net/moon.png",
+  "description": "ASP.NET 5 library for parsing OData queries.",
+  "tags": [ "moontea", "aspnet", "odata", "query" ],
+
+  "dependencies": {
+    "Moon.OData": "1.1.9",
+    "Microsoft.AspNet.Mvc.Core": "6.0.0-beta7"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Reflection.Extensions": "4.0.1-beta-23225"
+      }
+    }
+  }
+}

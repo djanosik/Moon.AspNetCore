@@ -1215,7 +1215,7 @@
         "type": "project",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0-beta7",
-          "Moon.Contracts": "1.1.7",
+          "Moon.Contracts": "1.1.9",
           "Newtonsoft.Json": "7.0.1",
           "System.Net.Http": "4.0.1-beta-23225"
         }
@@ -1233,7 +1233,7 @@
           "Moon.AspNet": "1.0.0-ci"
         }
       },
-      "Moon.Contracts/1.1.7": {
+      "Moon.Contracts/1.1.9": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -2425,7 +2425,7 @@
         "type": "project",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0-beta7",
-          "Moon.Contracts": "1.1.7",
+          "Moon.Contracts": "1.1.9",
           "Newtonsoft.Json": "7.0.1",
           "System.Net.Http": "4.0.1-beta-23225"
         }
@@ -2443,7 +2443,7 @@
           "Moon.AspNet": "1.0.0-ci"
         }
       },
-      "Moon.Contracts/1.1.7": {
+      "Moon.Contracts/1.1.9": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.Tools": "4.0.1-beta-23225",
@@ -4672,10 +4672,10 @@
         "ref/net46/Microsoft.Win32.Registry.dll"
       ]
     },
-    "Moon.Contracts/1.1.7": {
+    "Moon.Contracts/1.1.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "lS8PeuCtree6gYb7HYth06pR5U8cBjaGHFycuvl7ti61AtAeT8x2BcBqd+yFuu+qW0CJ9iG4j4bo9pbh/v+dyA==",
+      "sha512": "+HpzcLV4XmBmIw342cTm24H1wpmP7WjDJdnlQSIt/swKokX/+3zEbGXYT0n9ylY/WrMEvjumBbM2ZfvsQSELGQ==",
       "files": [
         "lib/dnx451/Moon.Contracts.dll",
         "lib/dnx451/Moon.Contracts.xml",
@@ -4683,8 +4683,8 @@
         "lib/dotnet/Moon.Contracts.xml",
         "lib/net451/Moon.Contracts.dll",
         "lib/net451/Moon.Contracts.xml",
-        "Moon.Contracts.1.1.7.nupkg",
-        "Moon.Contracts.1.1.7.nupkg.sha512",
+        "Moon.Contracts.1.1.9.nupkg",
+        "Moon.Contracts.1.1.9.nupkg.sha512",
         "Moon.Contracts.nuspec"
       ]
     },
