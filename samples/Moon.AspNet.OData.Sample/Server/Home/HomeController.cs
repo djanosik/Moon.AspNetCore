@@ -10,7 +10,7 @@ namespace Moon.AspNet.OData.Sample.Server.Home
         [HttpGet("")]
         public IEnumerable<Entity> GetEntities(ODataQuery<Entity> odata)
         {
-            // to whatever you want with parsed OData query options
+            // do whatever you want with parsed OData query options
             return Enumerable.Empty<Entity>();
         }
     }
