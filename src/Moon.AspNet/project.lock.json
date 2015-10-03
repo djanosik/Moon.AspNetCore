@@ -414,7 +414,7 @@
           "lib/dnx451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Moon.Contracts/1.1.9": {
+      "Moon.Contracts/1.2.1": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -854,7 +854,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Moon.Contracts/1.1.9": {
+      "Moon.Contracts/1.2.1": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.Tools": "4.0.1-beta-23225",
@@ -2085,10 +2085,10 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "Moon.Contracts/1.1.9": {
+    "Moon.Contracts/1.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "+HpzcLV4XmBmIw342cTm24H1wpmP7WjDJdnlQSIt/swKokX/+3zEbGXYT0n9ylY/WrMEvjumBbM2ZfvsQSELGQ==",
+      "sha512": "QJqSoEr48VhMFl/QVrXF9VaOYlIGinvrvQsW0tNf47u9jKbPVC1yBunVy6816lZ8UvgKJ4TgKtH1Gjx9kyUxiw==",
       "files": [
         "lib/dnx451/Moon.Contracts.dll",
         "lib/dnx451/Moon.Contracts.xml",
@@ -2096,8 +2096,8 @@
         "lib/dotnet/Moon.Contracts.xml",
         "lib/net451/Moon.Contracts.dll",
         "lib/net451/Moon.Contracts.xml",
-        "Moon.Contracts.1.1.9.nupkg",
-        "Moon.Contracts.1.1.9.nupkg.sha512",
+        "Moon.Contracts.1.2.1.nupkg",
+        "Moon.Contracts.1.2.1.nupkg.sha512",
         "Moon.Contracts.nuspec"
       ]
     },
@@ -3404,7 +3404,7 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.AspNet.Hosting >= 1.0.0-beta7",
-      "Moon.Contracts >= 1.1.9",
+      "Moon.Contracts >= 1.2.1",
       "Newtonsoft.Json >= 7.0.1",
       "System.Net.Http >= 4.0.1-beta-23225"
     ],

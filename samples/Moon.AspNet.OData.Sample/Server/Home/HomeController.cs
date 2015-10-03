@@ -1,17 +1,18 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNet.Mvc;
 using Moon.OData;
+using Moon.OData.Sql;
 
 namespace Moon.AspNet.OData.Sample.Server.Home
 {
     public class HomeController : Controller
     {
         [HttpGet("")]
-        public IEnumerable<Entity> GetEntities(ODataQuery<Entity> odata)
+        public IActionResult Index(ODataOptions<Entity> options)
         {
-            // do whatever you want with parsed OData query options
-            return Enumerable.Empty<Entity>();
+            return View(new ODataSqlQuery(
+                "SELECT FROM MyTable WHERE Id > @p0",
+                123, options
+            ));
         }
     }
 }

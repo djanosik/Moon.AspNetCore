@@ -1310,7 +1310,7 @@
         "type": "project",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0-beta7",
-          "Moon.Contracts": "1.1.9",
+          "Moon.Contracts": "1.2.1",
           "Newtonsoft.Json": "7.0.1",
           "System.Net.Http": "4.0.1-beta-23225"
         }
@@ -1326,10 +1326,10 @@
         "type": "project",
         "dependencies": {
           "Microsoft.AspNet.Mvc.Core": "6.0.0-beta7",
-          "Moon.OData": "1.1.9"
+          "Moon.OData": "1.2.1"
         }
       },
-      "Moon.Contracts/1.1.9": {
+      "Moon.Contracts/1.2.1": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -1344,11 +1344,11 @@
           "lib/dnx451/Moon.Contracts.dll": {}
         }
       },
-      "Moon.OData/1.1.9": {
+      "Moon.OData/1.2.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.OData.Core": "6.13.0",
-          "Moon.Reflection": "1.1.9"
+          "Moon.Reflection": "1.2.1"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -1363,10 +1363,29 @@
           "lib/dnx451/Moon.OData.dll": {}
         }
       },
-      "Moon.Reflection/1.1.9": {
+      "Moon.OData.Sql/1.2.1": {
         "type": "package",
         "dependencies": {
-          "Moon.Runtime": "1.1.9"
+          "Moon.OData": "1.2.1",
+          "Moon.Reflection": "1.2.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Moon.OData.Sql.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Moon.OData.Sql.dll": {}
+        }
+      },
+      "Moon.Reflection/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Moon.Runtime": "1.2.1"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -1381,10 +1400,10 @@
           "lib/dnx451/Moon.Reflection.dll": {}
         }
       },
-      "Moon.Runtime/1.1.9": {
+      "Moon.Runtime/1.2.1": {
         "type": "package",
         "dependencies": {
-          "Moon.Contracts": "1.1.9"
+          "Moon.Contracts": "1.2.1"
         },
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -2677,7 +2696,7 @@
         "type": "project",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0-beta7",
-          "Moon.Contracts": "1.1.9",
+          "Moon.Contracts": "1.2.1",
           "Newtonsoft.Json": "7.0.1",
           "System.Net.Http": "4.0.1-beta-23225"
         }
@@ -2693,11 +2712,11 @@
         "type": "project",
         "dependencies": {
           "Microsoft.AspNet.Mvc.Core": "6.0.0-beta7",
-          "Moon.OData": "1.1.9",
+          "Moon.OData": "1.2.1",
           "System.Reflection.Extensions": "4.0.1-beta-23225"
         }
       },
-      "Moon.Contracts/1.1.9": {
+      "Moon.Contracts/1.2.1": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.Tools": "4.0.1-beta-23225",
@@ -2711,11 +2730,11 @@
           "lib/dotnet/Moon.Contracts.dll": {}
         }
       },
-      "Moon.OData/1.1.9": {
+      "Moon.OData/1.2.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.OData.Core": "6.13.0",
-          "Moon.Reflection": "1.1.9",
+          "Moon.Reflection": "1.2.1",
           "System.Reflection.Extensions": "4.0.1-beta-23225"
         },
         "compile": {
@@ -2725,10 +2744,25 @@
           "lib/dnxcore50/Moon.OData.dll": {}
         }
       },
-      "Moon.Reflection/1.1.9": {
+      "Moon.OData.Sql/1.2.1": {
         "type": "package",
         "dependencies": {
-          "Moon.Runtime": "1.1.9",
+          "Moon.OData": "1.2.1",
+          "Moon.Reflection": "1.2.1",
+          "System.Reflection.Extensions": "4.0.1-beta-23225",
+          "System.Text.RegularExpressions": "4.0.11-beta-23225"
+        },
+        "compile": {
+          "lib/dnxcore50/Moon.OData.Sql.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Moon.OData.Sql.dll": {}
+        }
+      },
+      "Moon.Reflection/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Moon.Runtime": "1.2.1",
           "System.Linq.Expressions": "4.0.11-beta-23225",
           "System.Reflection.Extensions": "4.0.1-beta-23225"
         },
@@ -2739,10 +2773,10 @@
           "lib/dotnet/Moon.Reflection.dll": {}
         }
       },
-      "Moon.Runtime/1.1.9": {
+      "Moon.Runtime/1.2.1": {
         "type": "package",
         "dependencies": {
-          "Moon.Contracts": "1.1.9",
+          "Moon.Contracts": "1.2.1",
           "System.Runtime.Extensions": "4.0.11-beta-23225"
         },
         "compile": {
@@ -5081,10 +5115,10 @@
         "ref/net46/Microsoft.Win32.Registry.dll"
       ]
     },
-    "Moon.Contracts/1.1.9": {
+    "Moon.Contracts/1.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "+HpzcLV4XmBmIw342cTm24H1wpmP7WjDJdnlQSIt/swKokX/+3zEbGXYT0n9ylY/WrMEvjumBbM2ZfvsQSELGQ==",
+      "sha512": "QJqSoEr48VhMFl/QVrXF9VaOYlIGinvrvQsW0tNf47u9jKbPVC1yBunVy6816lZ8UvgKJ4TgKtH1Gjx9kyUxiw==",
       "files": [
         "lib/dnx451/Moon.Contracts.dll",
         "lib/dnx451/Moon.Contracts.xml",
@@ -5092,14 +5126,15 @@
         "lib/dotnet/Moon.Contracts.xml",
         "lib/net451/Moon.Contracts.dll",
         "lib/net451/Moon.Contracts.xml",
-        "Moon.Contracts.1.1.9.nupkg",
-        "Moon.Contracts.1.1.9.nupkg.sha512",
+        "Moon.Contracts.1.2.1.nupkg",
+        "Moon.Contracts.1.2.1.nupkg.sha512",
         "Moon.Contracts.nuspec"
       ]
     },
-    "Moon.OData/1.1.9": {
+    "Moon.OData/1.2.1": {
       "type": "package",
-      "sha512": "/Iezkekv7UAVpX4RjmU82Pmtdmd30953aiBRwoteuyQR6kh/W0PLhgTwnWUnGnUn/a/lEVDkOfdSlrO2Jfgvrg==",
+      "serviceable": true,
+      "sha512": "aeONN/5R743rQF71DRoK5daJkZH51XCxkB3z+Jj/Lu0FZ8jxleLztMyMkT0trhVPUsO0IIGJ3mz6iYY6Yt+Cxg==",
       "files": [
         "lib/dnx451/Moon.OData.dll",
         "lib/dnx451/Moon.OData.xml",
@@ -5107,15 +5142,31 @@
         "lib/dnxcore50/Moon.OData.xml",
         "lib/net451/Moon.OData.dll",
         "lib/net451/Moon.OData.xml",
-        "Moon.OData.1.1.9.nupkg",
-        "Moon.OData.1.1.9.nupkg.sha512",
+        "Moon.OData.1.2.1.nupkg",
+        "Moon.OData.1.2.1.nupkg.sha512",
         "Moon.OData.nuspec"
       ]
     },
-    "Moon.Reflection/1.1.9": {
+    "Moon.OData.Sql/1.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "oy1vYYyUzl6ywDYrLIrKtY7rSBZnTGD+mzBr54GKcpMTQPqLQk0d4ao6f4gRE3pDKnBy76c08V5DCO3fB5Rzxg==",
+      "sha512": "T7vVujn2wYKp8h3tEYlfYScawLcXx06Y6KBAVfF2XW7dbTFKkUnvQPotj6g1GhoblNdnyDJTuRNDAxvegTz/6w==",
+      "files": [
+        "lib/dnx451/Moon.OData.Sql.dll",
+        "lib/dnx451/Moon.OData.Sql.xml",
+        "lib/dnxcore50/Moon.OData.Sql.dll",
+        "lib/dnxcore50/Moon.OData.Sql.xml",
+        "lib/net451/Moon.OData.Sql.dll",
+        "lib/net451/Moon.OData.Sql.xml",
+        "Moon.OData.Sql.1.2.1.nupkg",
+        "Moon.OData.Sql.1.2.1.nupkg.sha512",
+        "Moon.OData.Sql.nuspec"
+      ]
+    },
+    "Moon.Reflection/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "JRA2rzKCd0IAIWoebnmjYG2c8jozte22h0ZLd6CbUcyB6suAueS5fgaYq0gERZPgCkyHf2NcNbt7a0beo0FHpw==",
       "files": [
         "lib/dnx451/Moon.Reflection.dll",
         "lib/dnx451/Moon.Reflection.xml",
@@ -5123,15 +5174,15 @@
         "lib/dotnet/Moon.Reflection.xml",
         "lib/net451/Moon.Reflection.dll",
         "lib/net451/Moon.Reflection.xml",
-        "Moon.Reflection.1.1.9.nupkg",
-        "Moon.Reflection.1.1.9.nupkg.sha512",
+        "Moon.Reflection.1.2.1.nupkg",
+        "Moon.Reflection.1.2.1.nupkg.sha512",
         "Moon.Reflection.nuspec"
       ]
     },
-    "Moon.Runtime/1.1.9": {
+    "Moon.Runtime/1.2.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "fPMWZ7hqa7ifcYgd3LBirk946ac8AO8JwGuK4aXETt/du69F60pgyANDFLdM4B0jRdI6wF8XNnalv/z0NmuZ3g==",
+      "sha512": "apTeo39ctnIqDqZVTuDntfy6/rzuWVqMQVCY0/fGbfBmDYt1qN7KUBW6qAd3K0j9B0qxcx3Vr2IiAXJYL1gBJg==",
       "files": [
         "lib/dnx451/Moon.Runtime.dll",
         "lib/dnx451/Moon.Runtime.xml",
@@ -5139,8 +5190,8 @@
         "lib/dotnet/Moon.Runtime.xml",
         "lib/net451/Moon.Runtime.dll",
         "lib/net451/Moon.Runtime.xml",
-        "Moon.Runtime.1.1.9.nupkg",
-        "Moon.Runtime.1.1.9.nupkg.sha512",
+        "Moon.Runtime.1.2.1.nupkg",
+        "Moon.Runtime.1.2.1.nupkg.sha512",
         "Moon.Runtime.nuspec"
       ]
     },
@@ -6805,7 +6856,8 @@
     "": [
       "Microsoft.AspNet.Server.IIS >= 1.0.0-beta7",
       "Moon.AspNet.Mvc >= 1.0.0-ci",
-      "Moon.AspNet.OData >= 1.0.0-ci"
+      "Moon.AspNet.OData >= 1.0.0-ci",
+      "Moon.OData.Sql >= 1.2.1"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []

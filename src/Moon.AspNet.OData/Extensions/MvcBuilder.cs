@@ -29,7 +29,7 @@ namespace Microsoft.Framework.DependencyInjection
 
             services.Configure<MvcOptions>(o =>
             {
-                o.ModelBinders.Add(new ODataQueryModelBinder(primitives));
+                o.ModelBinders.Add(new ODataOptionsModelBinder(primitives));
             });
 
             return builder;

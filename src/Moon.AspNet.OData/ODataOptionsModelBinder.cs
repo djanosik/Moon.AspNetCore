@@ -11,15 +11,15 @@ namespace Moon.AspNet.OData
     /// <summary>
     /// <see cref="IModelBinder" /> implementation to bind models of type <see cref="ODataQuery{TEntity}" />.
     /// </summary>
-    public class ODataQueryModelBinder : IModelBinder
+    public class ODataOptionsModelBinder : IModelBinder
     {
         readonly IEnumerable<IPrimitiveType> primitives;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ODataQueryModelBinder" /> class.
+        /// Initializes a new instance of the <see cref="ODataOptionsModelBinder" /> class.
         /// </summary>
         /// <param name="primitives">An enumeration of primitive types.</param>
-        public ODataQueryModelBinder(IEnumerable<IPrimitiveType> primitives)
+        public ODataOptionsModelBinder(IEnumerable<IPrimitiveType> primitives)
         {
             this.primitives = primitives;
         }
@@ -34,16 +34,16 @@ namespace Moon.AspNet.OData
             var request = bindingContext.OperationBindingContext.HttpContext.Request;
             var modelType = bindingContext.ModelType;
 
-            if (modelType.GetGenericTypeDefinition() == typeof(ODataQuery<>))
+            if (modelType.GetGenericTypeDefinition() == typeof(ODataOptions<>))
             {
-                var model = Class.Create(modelType, GetQueryOptions(request), primitives);
+                var model = Class.Create(modelType, GetOptions(request), primitives);
                 result = new ModelBindingResult(model, bindingContext.ModelName, true);
             }
 
             return Task.FromResult(result);
         }
 
-        static IDictionary<string, string> GetQueryOptions(HttpRequest request)
+        static IDictionary<string, string> GetOptions(HttpRequest request)
         {
             Requires.NotNull(request, nameof(request));
 
