@@ -4,8 +4,8 @@
   "owners": [ "djanosik" ],
   "projectUrl": "https://github.com/djanosik/Moon.AspNet",
   "iconUrl": "http://moontea.net/moon.png",
-  "description": "ASP.NET 5 library for parsing OData queries.",
-  "tags": [ "moontea", "aspnet", "odata", "query" ],
+  "description": "ASP.NET 5 library for parsing OData query options.",
+  "tags": [ "moontea", "aspnet", "odata", "query", "options" ],
 
   "dependencies": {
     "Moon.OData": "1.2.1",
