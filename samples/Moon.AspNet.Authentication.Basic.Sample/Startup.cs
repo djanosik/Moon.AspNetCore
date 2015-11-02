@@ -13,6 +13,8 @@ namespace Moon.AspNet.Authentication.Basic.Sample
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseIISPlatformHandler();
+
             // WARNING! Never ever use the Basic authentication with non-SSL connection.
 
             app.UseBasicAuthentication(o =>
@@ -40,9 +42,10 @@ namespace Moon.AspNet.Authentication.Basic.Sample
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-            services.AddSingleton<IRazorViewEngine, PagesViewEngine>();
-            services.AddAuthorization();
+            services
+                .AddAuthorization()
+                .AddSingleton<IRazorViewEngine, PagesViewEngine>()
+                .AddMvc();
         }
     }
 }
