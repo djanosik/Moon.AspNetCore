@@ -1,6 +1,5 @@
 ﻿using System;
-using Microsoft.AspNet.Builder;
-using Microsoft.Framework.OptionsModel;
+using Moon;
 using Moon.AspNet.Authentication.Basic;
 
 namespace Microsoft.AspNet.Builder
@@ -14,16 +13,36 @@ namespace Microsoft.AspNet.Builder
         /// Adds a Basic authentication middleware to your web application pipeline.
         /// </summary>
         /// <param name="app">The application builder.</param>
+        public static IApplicationBuilder UseBasicAuthentication(this IApplicationBuilder app)
+            => app.UseBasicAuthentication(new BasicAuthenticationOptions());
+
+        /// <summary>
+        /// Adds a Basic authentication middleware to your web application pipeline.
+        /// </summary>
+        /// <param name="app">The application builder.</param>
         /// <param name="configureOptions">The middleware options configuration.</param>
-        public static IApplicationBuilder UseBasicAuthentication(this IApplicationBuilder app, Action<BasicAuthenticationOptions> configureOptions = null)
-            => app.UseMiddleware<BasicAuthenticationMiddleware>(new ConfigureOptions<BasicAuthenticationOptions>(configureOptions ?? (o => { })));
+        public static IApplicationBuilder UseBasicAuthentication(this IApplicationBuilder app, Action<BasicAuthenticationOptions> configureOptions)
+        {
+            var options = new BasicAuthenticationOptions();
+
+            if (configureOptions != null)
+            {
+                configureOptions(options);
+            }
+
+            return app.UseBasicAuthentication(options);
+        }
 
         /// <summary>
         /// Adds a cookie-based authentication middleware to your web application pipeline.
         /// </summary>
         /// <param name="app">The application builder.</param>
-        /// <param name="options">&gt;The middleware options configuration.</param>
-        public static IApplicationBuilder UseBasicAuthentication(this IApplicationBuilder app, IOptions<BasicAuthenticationOptions> options)
-            => app.UseMiddleware<BasicAuthenticationMiddleware>(options, new ConfigureOptions<BasicAuthenticationOptions>(o => { }));
+        /// <param name="options">The middleware options configuration.</param>
+        public static IApplicationBuilder UseBasicAuthentication(this IApplicationBuilder app, BasicAuthenticationOptions options)
+        {
+            Requires.NotNull(options, nameof(options));
+
+            return app.UseMiddleware<BasicAuthenticationMiddleware>(options);
+        }
     }
 }

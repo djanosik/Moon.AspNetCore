@@ -1,7 +1,6 @@
 using Microsoft.AspNet.Authentication;
 using Microsoft.AspNet.Builder;
 using Microsoft.Framework.Logging;
-using Microsoft.Framework.OptionsModel;
 using Microsoft.Framework.WebEncoders;
 
 namespace Moon.AspNet.Authentication.Basic
@@ -18,10 +17,8 @@ namespace Moon.AspNet.Authentication.Basic
         /// <param name="options">The middleware options.</param>
         /// <param name="loggerFactory">The <see cref="ILogger" /> factory.</param>
         /// <param name="encoder">The URL encoder.</param>
-        /// <param name="configureOptions">The middleware configuration.</param>
-        public BasicAuthenticationMiddleware(RequestDelegate next, IOptions<BasicAuthenticationOptions> options, ILoggerFactory loggerFactory,
-            IUrlEncoder encoder, ConfigureOptions<BasicAuthenticationOptions> configureOptions)
-            : base(next, options, loggerFactory, encoder, configureOptions)
+        public BasicAuthenticationMiddleware(RequestDelegate next, BasicAuthenticationOptions options, ILoggerFactory loggerFactory, IUrlEncoder encoder)
+            : base(next, options, loggerFactory, encoder)
         {
             if (string.IsNullOrEmpty(Options.Realm))
             {

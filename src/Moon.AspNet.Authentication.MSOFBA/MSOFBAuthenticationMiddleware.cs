@@ -62,7 +62,7 @@ namespace Moon.AspNet.Authentication.MSOFBA
 
             var userAgent = request.Headers["User-Agent"];
 
-            if (userAgent != null && userAgent.Contains("Microsoft Office"))
+            if (userAgent.Count >= 1 && userAgent[0].Contains("Microsoft Office"))
             {
                 return true;
             }

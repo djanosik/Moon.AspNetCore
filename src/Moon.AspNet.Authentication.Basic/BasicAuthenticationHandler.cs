@@ -63,7 +63,7 @@ namespace Moon.AspNet.Authentication.Basic
         /// <param name="context">The challenge context.</param>
         protected override Task<bool> HandleUnauthorizedAsync(ChallengeContext context)
         {
-            Response.Headers.Append("WWW-Authenticate", $"Basic realm=\"{Options.Realm}\"");
+            Response.Headers.Add("WWW-Authenticate", $"Basic realm=\"{Options.Realm}\"");
             return base.HandleUnauthorizedAsync(context);
         }
 

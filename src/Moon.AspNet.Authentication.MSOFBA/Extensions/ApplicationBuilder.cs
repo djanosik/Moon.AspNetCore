@@ -1,4 +1,5 @@
 ﻿using System;
+using Moon;
 using Moon.AspNet.Authentication.MSOFBA;
 
 namespace Microsoft.AspNet.Builder
@@ -12,8 +13,15 @@ namespace Microsoft.AspNet.Builder
         /// Adds an MS-OFBA authentication middleware to your web application pipeline.
         /// </summary>
         /// <param name="app">The application builder.</param>
+        public static IApplicationBuilder UseMSOFBAuthentication(this IApplicationBuilder app)
+            => app.UseMSOFBAuthentication(new MSOFBAuthenticationOptions());
+
+        /// <summary>
+        /// Adds an MS-OFBA authentication middleware to your web application pipeline.
+        /// </summary>
+        /// <param name="app">The application builder.</param>
         /// <param name="configureOptions">The middleware options configuration.</param>
-        public static IApplicationBuilder UseMSOFBAuthentication(this IApplicationBuilder app, Action<MSOFBAuthenticationOptions> configureOptions = null)
+        public static IApplicationBuilder UseMSOFBAuthentication(this IApplicationBuilder app, Action<MSOFBAuthenticationOptions> configureOptions)
         {
             var options = new MSOFBAuthenticationOptions();
 
@@ -21,6 +29,18 @@ namespace Microsoft.AspNet.Builder
             {
                 configureOptions(options);
             }
+
+            return app.UseMSOFBAuthentication(options);
+        }
+
+        /// <summary>
+        /// Adds an MS-OFBA authentication middleware to your web application pipeline.
+        /// </summary>
+        /// <param name="app">The application builder.</param>
+        /// <param name="options">The middleware options configuration.</param>
+        public static IApplicationBuilder UseMSOFBAuthentication(this IApplicationBuilder app, MSOFBAuthenticationOptions options)
+        {
+            Requires.NotNull(options, nameof(options));
 
             return app.UseMiddleware<MSOFBAuthenticationMiddleware>(options);
         }

@@ -2,7 +2,6 @@
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Mvc.Razor;
 using Microsoft.Framework.DependencyInjection;
-using Moon.AspNet.Mvc;
 
 namespace Moon.AspNet.Mvc.Sample
 {
@@ -10,11 +9,6 @@ namespace Moon.AspNet.Mvc.Sample
     {
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (!env.IsDevelopment())
-            {
-                app.UseOneHostName("domain.com");
-            }
-
             app.UseMvc();
         }
 

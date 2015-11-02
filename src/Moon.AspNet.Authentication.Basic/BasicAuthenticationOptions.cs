@@ -1,11 +1,12 @@
 using Microsoft.AspNet.Authentication;
+using Microsoft.Framework.OptionsModel;
 
 namespace Moon.AspNet.Authentication.Basic
 {
     /// <summary>
     /// Contains the options used by the <see cref="BasicAuthenticationMiddleware" />.
     /// </summary>
-    public class BasicAuthenticationOptions : AuthenticationOptions
+    public class BasicAuthenticationOptions : AuthenticationOptions, IOptions<BasicAuthenticationOptions>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="BasicAuthenticationOptions" /> class.
@@ -27,5 +28,8 @@ namespace Moon.AspNet.Authentication.Basic
         /// Gets or sets delegates called during Basic authentication process.
         /// </summary>
         public IBasicAuthenticationEvents Events { get; set; }
+
+        BasicAuthenticationOptions IOptions<BasicAuthenticationOptions>.Value
+            => this;
     }
 }

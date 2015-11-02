@@ -8,7 +8,8 @@
   "tags": [ "moontea", "aspnet", "authentication", "basic" ],
 
   "dependencies": {
-    "Microsoft.AspNet.Authentication": "1.0.0-beta7"
+    "Moon.Contracts": "1.2.3",
+    "Microsoft.AspNet.Authentication": "1.0.0-beta8"
   },
 
   "frameworks": {
