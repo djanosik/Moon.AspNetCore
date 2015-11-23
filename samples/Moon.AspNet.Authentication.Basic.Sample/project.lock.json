@@ -1285,7 +1285,7 @@
       },
       "Moon.AspNet/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0",
           "Moon.Contracts": "1.2.4",
@@ -1295,7 +1295,7 @@
       },
       "Moon.AspNet.Authentication.Basic/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Authentication": "1.0.0",
           "Moon.Contracts": "1.2.4"
@@ -1303,7 +1303,7 @@
       },
       "Moon.AspNet.Mvc/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "6.0.0",
           "Moon.AspNet": "1.0.0-ci"
@@ -2737,7 +2737,7 @@
       },
       "Moon.AspNet/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0",
           "Moon.Contracts": "1.2.4",
@@ -2747,7 +2747,7 @@
       },
       "Moon.AspNet.Authentication.Basic/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Authentication": "1.0.0",
           "Moon.Contracts": "1.2.4"
@@ -2755,7 +2755,7 @@
       },
       "Moon.AspNet.Mvc/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "6.0.0",
           "Moon.AspNet": "1.0.0-ci"
@@ -4966,7 +4966,7 @@
       },
       "Moon.AspNet/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0",
           "Moon.Contracts": "1.2.4",
@@ -4976,7 +4976,7 @@
       },
       "Moon.AspNet.Authentication.Basic/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Authentication": "1.0.0",
           "Moon.Contracts": "1.2.4"
@@ -4984,7 +4984,7 @@
       },
       "Moon.AspNet.Mvc/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "6.0.0",
           "Moon.AspNet": "1.0.0-ci"
@@ -6530,7 +6530,7 @@
       },
       "Moon.AspNet/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0",
           "Moon.Contracts": "1.2.4",
@@ -6540,7 +6540,7 @@
       },
       "Moon.AspNet.Authentication.Basic/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Authentication": "1.0.0",
           "Moon.Contracts": "1.2.4"
@@ -6548,7 +6548,7 @@
       },
       "Moon.AspNet.Mvc/1.0.0-ci": {
         "type": "project",
-        "framework": "DNX,Version=v4.5.1",
+        "framework": ".NETFramework,Version=v4.5.1",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "6.0.0",
           "Moon.AspNet": "1.0.0-ci"
@@ -7991,7 +7991,7 @@
       },
       "Moon.AspNet/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0",
           "Moon.Contracts": "1.2.4",
@@ -8001,7 +8001,7 @@
       },
       "Moon.AspNet.Authentication.Basic/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Authentication": "1.0.0",
           "Moon.Contracts": "1.2.4"
@@ -8009,7 +8009,7 @@
       },
       "Moon.AspNet.Mvc/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "6.0.0",
           "Moon.AspNet": "1.0.0-ci"
@@ -10570,7 +10570,7 @@
       },
       "Moon.AspNet/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Hosting": "1.0.0",
           "Moon.Contracts": "1.2.4",
@@ -10580,7 +10580,7 @@
       },
       "Moon.AspNet.Authentication.Basic/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Authentication": "1.0.0",
           "Moon.Contracts": "1.2.4"
@@ -10588,7 +10588,7 @@
       },
       "Moon.AspNet.Mvc/1.0.0-ci": {
         "type": "project",
-        "framework": "DNXCore,Version=v5.0",
+        "framework": ".NETPlatform,Version=v5.4",
         "dependencies": {
           "Microsoft.AspNet.Mvc": "6.0.0",
           "Moon.AspNet": "1.0.0-ci"
