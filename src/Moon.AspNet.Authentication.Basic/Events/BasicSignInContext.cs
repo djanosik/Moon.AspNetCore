@@ -1,5 +1,4 @@
 ﻿using System.Security.Claims;
-using Microsoft.AspNet.Authentication;
 using Microsoft.AspNet.Http;
 
 namespace Moon.AspNet.Authentication.Basic
@@ -7,7 +6,7 @@ namespace Moon.AspNet.Authentication.Basic
     /// <summary>
     /// Context object used to control flow of Basic authentication.
     /// </summary>
-    public class BasicSignInContext : BaseContext<BasicAuthenticationOptions>
+    public class BasicSignInContext : BaseBasicContext
     {
         /// <summary>
         /// Creates a new instance of the context object.

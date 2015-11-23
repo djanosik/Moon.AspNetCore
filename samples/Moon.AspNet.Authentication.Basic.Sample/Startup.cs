@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Mvc.Razor;
-using Microsoft.Framework.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Moon.AspNet.Mvc;
 
 namespace Moon.AspNet.Authentication.Basic.Sample

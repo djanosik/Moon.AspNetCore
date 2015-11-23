@@ -16,7 +16,7 @@ namespace Moon.AspNet.Authentication.Basic
         /// <summary>
         /// Handles the authentication by checking the "Authorization" header.
         /// </summary>
-        protected override async Task<AuthenticationTicket> HandleAuthenticateAsync()
+        protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
         {
             AuthenticationTicket ticket = null;
 
@@ -40,20 +40,11 @@ namespace Moon.AspNet.Authentication.Basic
                     }
                 }
 
-                return ticket;
+                return AuthenticateResult.Success(ticket);
             }
             catch (Exception ex)
             {
-                var context = new BasicExceptionContext(Context, Options, ex, ticket);
-
-                Options.Events.Exception(context);
-
-                if (!context.Rethrow)
-                {
-                    return context.Ticket;
-                }
-
-                throw;
+                return AuthenticateResult.Failed(ex);
             }
         }
 

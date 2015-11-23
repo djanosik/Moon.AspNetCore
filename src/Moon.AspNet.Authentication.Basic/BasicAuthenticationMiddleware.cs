@@ -1,7 +1,7 @@
 using Microsoft.AspNet.Authentication;
 using Microsoft.AspNet.Builder;
-using Microsoft.Framework.Logging;
-using Microsoft.Framework.WebEncoders;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.WebEncoders;
 
 namespace Moon.AspNet.Authentication.Basic
 {

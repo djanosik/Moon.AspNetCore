@@ -1,5 +1,5 @@
 using Microsoft.AspNet.Authentication;
-using Microsoft.Framework.OptionsModel;
+using Microsoft.Extensions.OptionsModel;
 
 namespace Moon.AspNet.Authentication.Basic
 {
@@ -16,7 +16,8 @@ namespace Moon.AspNet.Authentication.Basic
             Realm = BasicAuthenticationDefaults.Realm;
             AuthenticationScheme = BasicAuthenticationDefaults.AuthenticationScheme;
             Events = new BasicAuthenticationEvents();
-            AutomaticAuthentication = true;
+            AutomaticAuthenticate = true;
+            AutomaticChallenge = true;
         }
 
         /// <summary>
