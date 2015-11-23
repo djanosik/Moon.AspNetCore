@@ -1,7 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Moon.AspNet.Mvc;
+﻿using Moon.AspNet.Mvc;
 
-namespace Microsoft.Framework.DependencyInjection
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// <see cref="IMvcBuilder" /> extension methods.
