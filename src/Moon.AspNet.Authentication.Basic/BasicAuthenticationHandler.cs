@@ -31,7 +31,8 @@ namespace Moon.AspNet.Authentication.Basic
                     var context = new BasicSignInContext(Context, Options, credentials.UserName,
                         credentials.Password);
 
-                    await Options.Events.SignInAsync(context);
+                    await Options.Events.SignInAsync(context)
+                        .ConfigureAwait(false);
 
                     if (context.Principal != null)
                     {

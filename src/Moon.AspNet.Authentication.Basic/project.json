@@ -4,16 +4,16 @@
   "owners": [ "djanosik" ],
   "projectUrl": "https://github.com/djanosik/Moon.AspNet",
   "iconUrl": "http://moontea.net/moon.png",
-  "description": "ASP.NET 5 middleware that enables an application to use Basic authentication.",
-  "tags": [ "moontea", "aspnet", "authentication", "basic" ],
+  "description": "ASP.NET Core middleware that enables an application to use Basic authentication.",
+  "tags": [ "moontea", "aspnet", "core", "authentication", "basic" ],
 
   "dependencies": {
-    "Moon.Contracts": "1.2.4",
+    "Moon.Contracts": "2.0.1",
     "Microsoft.AspNet.Authentication": "1.0.0-*"
   },
 
   "frameworks": {
-    "net451": { },
+    "net46": { },
     "dotnet5.4": { }
   }
 }

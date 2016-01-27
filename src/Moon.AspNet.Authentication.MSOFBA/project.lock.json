@@ -2,7 +2,7 @@
   "locked": false,
   "version": 2,
   "targets": {
-    ".NETFramework,Version=v4.5.1": {
+    ".NETFramework,Version=v4.6": {
       "Microsoft.AspNet.Authentication/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -386,7 +386,7 @@
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Moon.Contracts/1.2.4": {
+      "Moon.Contracts/2.0.1": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -395,10 +395,10 @@
           "System.Core"
         ],
         "compile": {
-          "lib/net451/Moon.Contracts.dll": {}
+          "lib/net46/Moon.Contracts.dll": {}
         },
         "runtime": {
-          "lib/net451/Moon.Contracts.dll": {}
+          "lib/net46/Moon.Contracts.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.6": {
@@ -815,7 +815,7 @@
           "ref/dotnet5.2/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "Moon.Contracts/1.2.4": {
+      "Moon.Contracts/2.0.1": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.Tools": "4.0.1-beta-23516",
@@ -1355,7 +1355,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.5.1/win7-x86": {
+    ".NETFramework,Version=v4.6/win7-x86": {
       "Microsoft.AspNet.Authentication/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -1739,7 +1739,7 @@
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Moon.Contracts/1.2.4": {
+      "Moon.Contracts/2.0.1": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -1748,10 +1748,10 @@
           "System.Core"
         ],
         "compile": {
-          "lib/net451/Moon.Contracts.dll": {}
+          "lib/net46/Moon.Contracts.dll": {}
         },
         "runtime": {
-          "lib/net451/Moon.Contracts.dll": {}
+          "lib/net46/Moon.Contracts.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.6": {
@@ -1764,7 +1764,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.5.1/win7-x64": {
+    ".NETFramework,Version=v4.6/win7-x64": {
       "Microsoft.AspNet.Authentication/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -2148,7 +2148,7 @@
           "lib/net451/Microsoft.Net.Http.Headers.dll": {}
         }
       },
-      "Moon.Contracts/1.2.4": {
+      "Moon.Contracts/2.0.1": {
         "type": "package",
         "frameworkAssemblies": [
           "Microsoft.CSharp",
@@ -2157,10 +2157,10 @@
           "System.Core"
         ],
         "compile": {
-          "lib/net451/Moon.Contracts.dll": {}
+          "lib/net46/Moon.Contracts.dll": {}
         },
         "runtime": {
-          "lib/net451/Moon.Contracts.dll": {}
+          "lib/net46/Moon.Contracts.dll": {}
         }
       },
       "Newtonsoft.Json/6.0.6": {
@@ -2577,7 +2577,7 @@
           "ref/dotnet5.2/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "Moon.Contracts/1.2.4": {
+      "Moon.Contracts/2.0.1": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.Tools": "4.0.1-beta-23516",
@@ -3733,7 +3733,7 @@
           "ref/dotnet5.2/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "Moon.Contracts/1.2.4": {
+      "Moon.Contracts/2.0.1": {
         "type": "package",
         "dependencies": {
           "System.Diagnostics.Tools": "4.0.1-beta-23516",
@@ -4851,17 +4851,17 @@
         "ref/net46/Microsoft.Win32.Registry.dll"
       ]
     },
-    "Moon.Contracts/1.2.4": {
+    "Moon.Contracts/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "/aP+fsevfU4jCujpZ3oUioTUeNj6vetGz4VZu0NXrtiKgttoVpQSIh3JKqnEXcob2bZ3PRIgc9n7jGUcARn70A==",
+      "sha512": "APql5vcnsGysEiINt3AgTcQD/7zpvCWUM5jlXl6usv3IlLfLQHr8YYPTY+1y5N7f26/7H3tkrtFO6/aXbMk+BQ==",
       "files": [
         "lib/dotnet5.4/Moon.Contracts.dll",
         "lib/dotnet5.4/Moon.Contracts.xml",
-        "lib/net451/Moon.Contracts.dll",
-        "lib/net451/Moon.Contracts.xml",
-        "Moon.Contracts.1.2.4.nupkg",
-        "Moon.Contracts.1.2.4.nupkg.sha512",
+        "lib/net46/Moon.Contracts.dll",
+        "lib/net46/Moon.Contracts.xml",
+        "Moon.Contracts.2.0.1.nupkg",
+        "Moon.Contracts.2.0.1.nupkg.sha512",
         "Moon.Contracts.nuspec"
       ]
     },
@@ -4958,7 +4958,7 @@
     "runtime.win7.System.Net.Http/4.0.1-beta-23516": {
       "type": "package",
       "serviceable": true,
-      "sha512": "bCVvitLtx/FGp/F14Yvq6Zkb05n6dwRleYNCSAnnX8YpNTKuKYpBJhEpMBUaOjalsM4lqMfE/kd99LtbZRHaiw==",
+      "sha512": "bY3pjffny1gN59HKE+5LKlrMN1QTj+BvIALy3emNQQaCfqf43BPhjbf1i30tIPst8HfvwFTnwcGMz03d7sK/jg==",
       "files": [
         "ref/dotnet/_._",
         "runtime.win7.System.Net.Http.4.0.1-beta-23516.nupkg",
@@ -5052,7 +5052,7 @@
     "System.Collections/4.0.11-beta-23516": {
       "type": "package",
       "serviceable": true,
-      "sha512": "TDca4OETV0kkXdpkyivMw1/EKKD1Sa/NVAjirw+fA0LZ37jLDYX+KhPPUQxgkvhCe/SVvxETD5Viiudza2k7OQ==",
+      "sha512": "FSd5zsGfmG2pidC3CVizQPNGTK1Q3A2HEuRqwUPLU/AArjELLC5p4l6XIAlJ9ZBPdbp6V8vFQAxUHzkFfyVkYA==",
       "files": [
         "lib/DNXCore50/System.Collections.dll",
         "lib/MonoAndroid10/_._",
@@ -5754,7 +5754,7 @@
     "System.Linq.Expressions/4.0.11-beta-23516": {
       "type": "package",
       "serviceable": true,
-      "sha512": "YEl5oyF5fifLbHHP099cvb/6f2r2h1QVHzoaoINPHOZtpNec+RfqvzETXcYDIdHT7l+bBAYsBuVUkBgfQEoYfQ==",
+      "sha512": "FtKytB13HabzrSvrAgBgOOnG2uxJO4s7zvP5Sk0NS3bwbJUyb5AP1p4897UWnLiB6C95jI4nIkZps51sa9In8g==",
       "files": [
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
@@ -5814,7 +5814,7 @@
     "System.Net.Http/4.0.1-beta-23516": {
       "type": "package",
       "serviceable": true,
-      "sha512": "WbmX0jo84S72GVhRbKtBBUkx2dQ1hzb4TRSLfaiktRh7QKnSP9ctzTxBvXghWQ6GnswBzTHnuc69msImZH5b6A==",
+      "sha512": "A0S7LiARhMNbZTzO+1hMlkWrWJ+KnEBUQbfTOP9QoYdzCmc5vmXsJMEBYudhaKg7T+fpq1xmBzjU8x8rOB2zMA==",
       "files": [
         "lib/net45/_._",
         "lib/win8/_._",
@@ -7121,10 +7121,10 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Moon.Contracts >= 1.2.4",
+      "Moon.Contracts >= 2.0.1",
       "Microsoft.AspNet.Authentication.Cookies >= 1.0.0-*"
     ],
-    ".NETFramework,Version=v4.5.1": [],
+    ".NETFramework,Version=v4.6": [],
     ".NETPlatform,Version=v5.4": []
   }
 }

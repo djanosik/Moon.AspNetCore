@@ -4,18 +4,18 @@
   "owners": [ "djanosik" ],
   "projectUrl": "https://github.com/djanosik/Moon.AspNet",
   "iconUrl": "http://moontea.net/moon.png",
-  "description": "Extensions for ASP.NET 5 framework.",
-  "tags": [ "moontea", "aspnet" ],
+  "description": "Extensions for ASP.NET Core framework.",
+  "tags": [ "moontea", "aspnet", "core" ],
 
   "dependencies": {
     "Microsoft.AspNet.Hosting": "1.0.0-*",
-    "Moon.Contracts": "1.2.4",
-    "Newtonsoft.Json": "7.0.1",
+    "Moon.Contracts": "2.0.1",
+    "Newtonsoft.Json": "8.0.2",
     "System.Net.Http": "4.0.1-*"
   },
 
   "frameworks": {
-    "net451": { },
+    "net46": { },
     "dotnet5.4": { }
   }
 }

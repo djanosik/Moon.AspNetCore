@@ -13,6 +13,6 @@
         /// <summary>
         /// The default realm used by basic authentication.
         /// </summary>
-        public const string Realm = "ASP.NET 5 application";
+        public const string Realm = "ASP.NET Core application";
     }
 }
