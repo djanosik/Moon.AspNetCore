@@ -1,4 +1,4 @@
-﻿using Moon.AspNet.Mvc;
+﻿using Moon.AspNet.Mvc.Filters;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
