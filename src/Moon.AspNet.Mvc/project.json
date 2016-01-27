@@ -10,6 +10,7 @@
   "dependencies": {
     "Moon.AspNet": "1.0.0-ci",
     "Moon.IO": "2.0.1",
+    "Microsoft.AspNet.Mvc": "6.0.0-*",
     "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-*"
   },
 
