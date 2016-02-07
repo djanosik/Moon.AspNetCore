@@ -17,7 +17,8 @@ namespace Moon.AspNet.Mvc.Sample
         {
             services
                 .AddSingleton<IRazorViewEngine, PagesViewEngine>()
-                .AddMvc();
+                .AddMvc()
+                .AddHttpErrors();
         }
     }
 }

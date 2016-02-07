@@ -13,5 +13,11 @@ namespace Moon.AspNet.Mvc.Sample.Pages.Home
                 Items = Enumerable.Range(1, 10)
             });
         }
+
+        [HttpGet("error")]
+        public IActionResult Error()
+        {
+            throw Response.Error("Something happened!");
+        }
     }
 }

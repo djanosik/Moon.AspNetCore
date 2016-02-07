@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNet.Mvc.Filters;
+﻿using Microsoft.AspNet.Mvc;
+using Microsoft.AspNet.Mvc.Filters;
+using Microsoft.Extensions.Primitives;
 
 namespace Moon.AspNet.Mvc.Filters
 {
@@ -24,6 +26,14 @@ namespace Moon.AspNet.Mvc.Filters
 
             if (httpException != null && httpException.Result != null)
             {
+                var objectResult = httpException.Result as ObjectResult;
+                var errorMessage = objectResult?.Value as ErrorMessage;
+
+                if (errorMessage != null)
+                {
+                    context.HttpContext.Response.Headers.Add("Error-Message", new StringValues(errorMessage.Message));
+                }
+
                 context.Result = httpException.Result;
                 context.ExceptionHandled = true;
             }
