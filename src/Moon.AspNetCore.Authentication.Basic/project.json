@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.0-ci",
+  "authors": [ "Dusan Janosik" ],
+  "description": "ASP.NET Core middleware that enables an application to use Basic authentication.",
+
+  "packOptions": {
+    "owners": [ "djanosik" ],
+    "projectUrl": "https://github.com/djanosik/Moon.AspNet",
+    "iconUrl": "https://djanosik.github.io/moon.png",
+    "tags": [ "moon", "aspnet", "core", "authentication", "basic" ]
+  },
+
+  "dependencies": {
+    "Moon.Contracts": "2.1.1",
+    "Microsoft.AspNetCore.Authentication": "1.0.0-*",
+    "Microsoft.Extensions.WebEncoders": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net46": { },
+    "netstandard1.5": { }
+  }
+}

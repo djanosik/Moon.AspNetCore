@@ -1,0 +1,31 @@
+﻿{
+  "version": "1.0.0-ci",
+  "authors": [ "Dusan Janosik" ],
+  "description": "Extensions for ASP.NET Core framework.",
+
+  "packOptions": {
+    "owners": [ "djanosik" ],
+    "projectUrl": "https://github.com/djanosik/Moon.AspNet",
+    "iconUrl": "https://djanosik.github.io/moon.png",
+    "tags": [ "moon", "aspnet", "core" ]
+  },
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Hosting": "1.0.0-*",
+    "Moon.Contracts": "2.1.1",
+    "Newtonsoft.Json": "9.0.1-*"
+  },
+
+  "frameworks": {
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Net.Http": "4.0.0.0"
+      }
+    },
+    "netstandard1.5": {
+      "dependencies": {
+        "System.Net.Http": "4.0.1-*"
+      }
+    }
+  }
+}
