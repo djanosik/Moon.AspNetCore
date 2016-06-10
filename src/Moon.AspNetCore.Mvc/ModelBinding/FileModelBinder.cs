@@ -18,11 +18,6 @@ namespace Moon.AspNetCore.Mvc.ModelBinding
         /// <param name="bindingContext">The binding context.</param>
         public async Task BindModelAsync(ModelBindingContext bindingContext)
         {
-            if (bindingContext.ModelType != typeof(byte[]))
-            {
-                return;
-            }
-
             var file = await GetFormFile(bindingContext);
 
             if (file != null)
