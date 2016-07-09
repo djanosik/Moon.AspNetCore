@@ -3,19 +3,23 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.DependencyInjection;
-using Moon.AspNetCore.Mvc;
 
 namespace Moon.AspNetCore.Authentication.Basic.Sample
 {
     public class Startup
     {
-        readonly string password = "password";
+        const string password = "password";
 
         public void ConfigureServices(IServiceCollection services)
         {
             services
+                .Configure<RazorViewEngineOptions>(o =>
+                {
+                    o.ViewLocationFormats.Clear();
+                    o.ViewLocationFormats.Add("/Pages/{1}/{0}.cshtml");
+                    o.ViewLocationFormats.Add("/Pages/Shared/{0}.cshtml");
+                })
                 .AddAuthorization()
-                .AddSingleton<IRazorViewEngine, PagesViewEngine>()
                 .AddMvc();
         }
 
@@ -27,8 +31,7 @@ namespace Moon.AspNetCore.Authentication.Basic.Sample
             {
                 o.Realm = $"Password: {password}";
 
-                o.Events = new BasicAuthenticationEvents
-                {
+                o.Events = new BasicAuthenticationEvents {
                     OnSignIn = c =>
                     {
                         if (c.Password == password)

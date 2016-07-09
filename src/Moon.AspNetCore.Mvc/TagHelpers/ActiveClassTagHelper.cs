@@ -11,12 +11,11 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
     /// <see cref="ITagHelper" /> implementation targeting &lt;a&gt; elements. It appends a CSS class
     /// to &lt;a&gt; element when it is active.
     /// </summary>
-    [HtmlTargetElement("a", Attributes = ActiveClassAttributeName)]
+    [HtmlTargetElement("a", Attributes = activeClassAttributeName)]
     public class ActiveClassTagHelper : TagHelper
     {
-        const string ActiveClassAttributeName = "asp-active-class";
-
-        readonly StringComparison comparison = StringComparison.OrdinalIgnoreCase;
+        const string activeClassAttributeName = "asp-active-class";
+        const StringComparison comparison = StringComparison.OrdinalIgnoreCase;
 
         /// <summary>
         /// Gets the order the tag helper will run in.
@@ -27,7 +26,7 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
         /// <summary>
         /// Gets or sets the CSS class to append to &lt;a&gt; element when it is active.
         /// </summary>
-        [HtmlAttributeName(ActiveClassAttributeName)]
+        [HtmlAttributeName(activeClassAttributeName)]
         public string ActiveClass { get; set; }
 
         /// <summary>

@@ -13,9 +13,6 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         /// <param name="builder">The ASP.NET MVC builder.</param>
         public static IMvcBuilder AddHttpErrors(this IMvcBuilder builder)
-            => builder.AddMvcOptions(o =>
-            {
-                o.Filters.Add(new HttpExceptionActionFilter());
-            });
+            => builder.AddMvcOptions(o => o.Filters.Add(new HttpExceptionActionFilter()));
     }
 }

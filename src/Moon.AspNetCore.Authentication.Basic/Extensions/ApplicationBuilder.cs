@@ -24,12 +24,7 @@ namespace Microsoft.AspNetCore.Builder
         public static IApplicationBuilder UseBasicAuthentication(this IApplicationBuilder app, Action<BasicAuthenticationOptions> configureOptions)
         {
             var options = new BasicAuthenticationOptions();
-
-            if (configureOptions != null)
-            {
-                configureOptions(options);
-            }
-
+            configureOptions?.Invoke(options);
             return app.UseBasicAuthentication(options);
         }
 

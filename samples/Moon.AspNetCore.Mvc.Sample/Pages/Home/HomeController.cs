@@ -8,8 +8,7 @@ namespace Moon.AspNetCore.Mvc.Sample.Pages.Home
         [HttpGet("")]
         public IActionResult Index()
         {
-            return View(new IndexModel
-            {
+            return View(new IndexModel {
                 Items = Enumerable.Range(1, 10)
             });
         }

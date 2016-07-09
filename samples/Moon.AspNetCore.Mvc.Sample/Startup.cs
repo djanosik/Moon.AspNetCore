@@ -9,7 +9,12 @@ namespace Moon.AspNetCore.Mvc.Sample
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddSingleton<IRazorViewEngine, PagesViewEngine>()
+                .Configure<RazorViewEngineOptions>(o =>
+                {
+                    o.ViewLocationFormats.Clear();
+                    o.ViewLocationFormats.Add("/Pages/{1}/{0}.cshtml");
+                    o.ViewLocationFormats.Add("/Pages/Shared/{0}.cshtml");
+                })
                 .AddMvc()
                 .AddHttpErrors();
         }

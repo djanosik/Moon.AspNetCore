@@ -25,7 +25,6 @@ namespace Microsoft.AspNetCore.Builder
         {
             var options = new MSOFBAuthenticationOptions();
             configureOptions?.Invoke(options);
-
             return app.UseMSOFBAuthentication(options);
         }
 

@@ -5,15 +5,15 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
     /// <summary>
     /// <see cref="ITagHelper" /> hiding an element when the condition is not satisfied.
     /// </summary>
-    [HtmlTargetElement(Attributes = ConditionAttributeName)]
+    [HtmlTargetElement(Attributes = conditionAttributeName)]
     public class ConditionTagHelper : TagHelper
     {
-        const string ConditionAttributeName = "asp-if";
+        const string conditionAttributeName = "asp-if";
 
         /// <summary>
         /// Gets or sets the condition to determine whether the element should be visible.
         /// </summary>
-        [HtmlAttributeName(ConditionAttributeName)]
+        [HtmlAttributeName(conditionAttributeName)]
         public bool Condition { get; set; }
 
         /// <summary>

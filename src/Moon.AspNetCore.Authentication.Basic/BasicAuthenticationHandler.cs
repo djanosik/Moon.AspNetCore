@@ -68,8 +68,7 @@ namespace Moon.AspNetCore.Authentication.Basic
             var parts = Encoding.UTF8.GetString(bytes).Split(':');
             var slashIndex = parts[0].IndexOf('\\');
 
-            return new NetworkCredential
-            {
+            return new NetworkCredential {
                 UserName = slashIndex >= 0 ? parts[0].Remove(0, slashIndex + 1) : parts[0],
                 Password = parts[1]
             };

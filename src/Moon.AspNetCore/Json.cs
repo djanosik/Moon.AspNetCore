@@ -9,7 +9,7 @@ namespace Moon.AspNetCore
     public static class Json
     {
         /// <summary>
-        /// Serializes the given object as JSON (resp. JavaScrpt object).
+        /// Serializes the given object as JSON (resp. JavaScript object).
         /// </summary>
         /// <param name="value">The object to serialize.</param>
         /// <param name="quoteNames">A value indicating whether names should be quoted.</param>

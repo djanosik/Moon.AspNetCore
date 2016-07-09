@@ -18,9 +18,9 @@ namespace Moon.AspNetCore.Mvc
     /// </summary>
     public class ViewRenderer
     {
-        readonly IServiceProvider serviceProvider;
-        readonly IHttpContextAccessor httpContextAccessor;
         readonly IActionContextAccessor actionContextAccessor;
+        readonly IHttpContextAccessor httpContextAccessor;
+        readonly IServiceProvider serviceProvider;
         readonly ITempDataProvider tempDataProvider;
         readonly ICompositeViewEngine viewEngine;
 
@@ -56,13 +56,7 @@ namespace Moon.AspNetCore.Mvc
         /// <param name="model">The view model.</param>
         public async Task<string> RenderAsync<TModel>(string name, TModel model)
         {
-            var actionContext = actionContextAccessor.ActionContext;
-
-            if (actionContext == null)
-            {
-                actionContext = new ActionContext(new FakeHttpContext(serviceProvider),
-                    new RouteData(), new ActionDescriptor());
-            }
+            var actionContext = actionContextAccessor.ActionContext ?? CreateActionContext();
 
             if (httpContextAccessor.HttpContext == null)
             {
@@ -86,7 +80,10 @@ namespace Moon.AspNetCore.Mvc
             }
         }
 
-        public class FakeHttpContext : DefaultHttpContext
+        ActionContext CreateActionContext()
+            => new ActionContext(new FakeHttpContext(serviceProvider), new RouteData(), new ActionDescriptor());
+
+        public sealed class FakeHttpContext : DefaultHttpContext
         {
             public FakeHttpContext(IServiceProvider services)
             {
