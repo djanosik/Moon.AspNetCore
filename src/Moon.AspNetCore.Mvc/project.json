@@ -5,14 +5,14 @@
 
   "packOptions": {
     "owners": [ "djanosik" ],
-    "projectUrl": "https://github.com/djanosik/Moon.AspNet",
-    "iconUrl": "https://djanosik.github.io/moon.png",
+    "projectUrl": "https://gitlab.com/djanosik/moon-aspnetcore",
+    "iconUrl": "https://djanosik.gitlab.io/moon.png",
     "tags": [ "moon", "aspnet", "core", "mvc" ]
   },
 
   "dependencies": {
     "Moon.AspNetCore": "1.0.0-ci",
-    "Moon.IO": "2.2.2",
+    "Moon.IO": "2.2.3",
     "Microsoft.AspNetCore.Mvc": "1.0.0",
     "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0"
   },
