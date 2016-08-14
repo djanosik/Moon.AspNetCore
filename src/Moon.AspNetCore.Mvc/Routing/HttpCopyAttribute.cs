@@ -7,7 +7,7 @@ namespace Moon.AspNetCore.Mvc
     /// </summary>
     public class HttpCopyAttribute : HttpMethodAttribute
     {
-        static readonly string[] methods = { "COPY" };
+        private static readonly string[] methods = { "COPY" };
 
         /// <summary>
         /// Initializes a new instance of the <see cref="HttpCopyAttribute" /> class.

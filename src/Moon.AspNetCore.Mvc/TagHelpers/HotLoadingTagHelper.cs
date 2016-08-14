@@ -11,10 +11,10 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
     [HtmlTargetElement("script", Attributes = hotPortAttributeName)]
     public class HotLoadingTagHelper : TagHelper
     {
-        const string hotSrcAttributeName = "asp-hot-src";
-        const string hotPortAttributeName = "asp-hot-port";
+        private const string hotSrcAttributeName = "asp-hot-src";
+        private const string hotPortAttributeName = "asp-hot-port";
 
-        readonly IHostingEnvironment host;
+        private readonly IHostingEnvironment host;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="HotLoadingTagHelper" /> class.
@@ -51,7 +51,7 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
         /// <param name="output">The helper output.</param>
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            if (HotSrc != null && host.IsDevelopment())
+            if ((HotSrc != null) && host.IsDevelopment())
             {
                 output.TagName = "script";
                 output.Attributes.SetAttribute("src", $"http://localhost:{HotPort}/{HotSrc.TrimStart('~', '/', '\\')}");

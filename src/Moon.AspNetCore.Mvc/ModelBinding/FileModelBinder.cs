@@ -29,7 +29,7 @@ namespace Moon.AspNetCore.Mvc.ModelBinding
             }
         }
 
-        async Task<IFormFile> GetFormFile(ModelBindingContext bindingContext)
+        private async Task<IFormFile> GetFormFile(ModelBindingContext bindingContext)
         {
             var request = bindingContext.HttpContext.Request;
 
@@ -53,7 +53,7 @@ namespace Moon.AspNetCore.Mvc.ModelBinding
                 ContentDispositionHeaderValue.TryParse(file.ContentDisposition, out parsedContentDisposition);
 
                 // If there is an <input type="file" ... /> in the form and is left blank.
-                if (parsedContentDisposition == null || (file.Length == 0 && string.IsNullOrEmpty(HeaderUtilities.RemoveQuotes(parsedContentDisposition.FileName))))
+                if ((parsedContentDisposition == null) || ((file.Length == 0) && string.IsNullOrEmpty(HeaderUtilities.RemoveQuotes(parsedContentDisposition.FileName))))
                 {
                     continue;
                 }

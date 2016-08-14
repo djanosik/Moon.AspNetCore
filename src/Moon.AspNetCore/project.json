@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0-ci",
-  "authors": [ "Dusan Janosik" ],
+  "authors": ["Dusan Janosik"],
   "description": "Extensions for ASP.NET Core framework.",
 
   "packOptions": {
-    "owners": [ "djanosik" ],
+    "owners": ["djanosik"],
     "projectUrl": "https://gitlab.com/djanosik/moon-aspnetcore",
     "iconUrl": "https://djanosik.gitlab.io/moon.png",
-    "tags": [ "moon", "aspnet", "core" ]
+    "tags": ["moon", "aspnet", "core"]
   },
 
   "dependencies": {

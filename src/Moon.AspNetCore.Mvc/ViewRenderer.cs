@@ -18,11 +18,11 @@ namespace Moon.AspNetCore.Mvc
     /// </summary>
     public class ViewRenderer
     {
-        readonly IActionContextAccessor actionContextAccessor;
-        readonly IHttpContextAccessor httpContextAccessor;
-        readonly IServiceProvider serviceProvider;
-        readonly ITempDataProvider tempDataProvider;
-        readonly ICompositeViewEngine viewEngine;
+        private readonly IActionContextAccessor actionContextAccessor;
+        private readonly IHttpContextAccessor httpContextAccessor;
+        private readonly IServiceProvider serviceProvider;
+        private readonly ITempDataProvider tempDataProvider;
+        private readonly ICompositeViewEngine viewEngine;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ViewRenderer" /> class.
@@ -80,7 +80,7 @@ namespace Moon.AspNetCore.Mvc
             }
         }
 
-        ActionContext CreateActionContext()
+        private ActionContext CreateActionContext()
             => new ActionContext(new FakeHttpContext(serviceProvider), new RouteData(), new ActionDescriptor());
 
         public sealed class FakeHttpContext : DefaultHttpContext

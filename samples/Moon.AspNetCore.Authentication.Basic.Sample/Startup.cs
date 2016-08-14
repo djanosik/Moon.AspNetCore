@@ -8,7 +8,7 @@ namespace Moon.AspNetCore.Authentication.Basic.Sample
 {
     public class Startup
     {
-        const string password = "password";
+        private const string password = "password";
 
         public void ConfigureServices(IServiceCollection services)
         {

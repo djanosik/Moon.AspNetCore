@@ -7,7 +7,7 @@ namespace Moon.AspNetCore.Mvc
     /// </summary>
     public class HttpMoveAttribute : HttpMethodAttribute
     {
-        static readonly string[] methods = { "MOVE" };
+        private static readonly string[] methods = { "MOVE" };
 
         /// <summary>
         /// Initializes a new instance of the <see cref="HttpMoveAttribute" /> class.

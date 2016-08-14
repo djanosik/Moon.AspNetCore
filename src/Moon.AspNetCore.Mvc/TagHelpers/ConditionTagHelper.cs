@@ -8,7 +8,7 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
     [HtmlTargetElement(Attributes = conditionAttributeName)]
     public class ConditionTagHelper : TagHelper
     {
-        const string conditionAttributeName = "asp-if";
+        private const string conditionAttributeName = "asp-if";
 
         /// <summary>
         /// Gets or sets the condition to determine whether the element should be visible.

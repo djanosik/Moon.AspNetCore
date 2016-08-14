@@ -9,7 +9,7 @@ namespace Moon.AspNetCore.Mvc.Filters
     /// <see cref="HttpException.Result" /> if the exception type is <see cref="HttpException" />.
     /// This filter runs immediately after the action.
     /// </summary>
-    class HttpExceptionActionFilter : IActionFilter, IOrderedFilter
+    internal class HttpExceptionActionFilter : IActionFilter, IOrderedFilter
     {
         /// <summary>
         /// Gets the order value for determining the order of execution of filters.

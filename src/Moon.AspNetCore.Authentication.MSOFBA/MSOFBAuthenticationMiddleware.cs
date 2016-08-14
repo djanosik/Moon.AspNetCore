@@ -10,8 +10,8 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
     /// </summary>
     public class MSOFBAuthenticationMiddleware
     {
-        readonly RequestDelegate next;
-        readonly MSOFBAuthenticationOptions options;
+        private readonly RequestDelegate next;
+        private readonly MSOFBAuthenticationOptions options;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MSOFBAuthenticationMiddleware" /> class.
@@ -35,7 +35,7 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
                 await next(context);
             }
 
-            if (context.User == null || !context.User.Identity.IsAuthenticated)
+            if ((context.User == null) || !context.User.Identity.IsAuthenticated)
             {
                 var loginUri = ToAbsolute(context.Request, options.LoginPath);
                 var successUri = ToAbsolute(context.Request, new PathString("/"));
@@ -48,10 +48,10 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
             }
         }
 
-        string ToAbsolute(HttpRequest request, PathString relativeUrl)
+        private string ToAbsolute(HttpRequest request, PathString relativeUrl)
             => $"{request.Scheme}://{request.Host.ToUriComponent()}{relativeUrl}";
 
-        bool IsOFBAAccepted(HttpRequest request)
+        private bool IsOFBAAccepted(HttpRequest request)
         {
             var ofbaAccepted = request.Headers["X-FORMS_BASED_AUTH_ACCEPTED"];
 
@@ -62,7 +62,7 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
 
             var userAgent = request.Headers["User-Agent"];
 
-            if (userAgent.Count >= 1 && userAgent[0].Contains("Microsoft Office"))
+            if ((userAgent.Count >= 1) && userAgent[0].Contains("Microsoft Office"))
             {
                 return true;
             }

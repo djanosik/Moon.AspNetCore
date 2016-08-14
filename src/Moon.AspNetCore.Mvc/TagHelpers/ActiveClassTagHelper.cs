@@ -14,8 +14,8 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
     [HtmlTargetElement("a", Attributes = activeClassAttributeName)]
     public class ActiveClassTagHelper : TagHelper
     {
-        const string activeClassAttributeName = "asp-active-class";
-        const StringComparison comparison = StringComparison.OrdinalIgnoreCase;
+        private const string activeClassAttributeName = "asp-active-class";
+        private const StringComparison comparison = StringComparison.OrdinalIgnoreCase;
 
         /// <summary>
         /// Gets the order the tag helper will run in.
@@ -54,10 +54,10 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
             }
         }
 
-        bool CanBeActive(TagHelperAttributeList attributes)
-            => ActiveClass != null && attributes.ContainsName("href") && attributes["href"].Value != null;
+        private bool CanBeActive(TagHelperAttributeList attributes)
+            => (ActiveClass != null) && attributes.ContainsName("href") && (attributes["href"].Value != null);
 
-        bool IsActive(TagHelperAttribute href)
+        private bool IsActive(TagHelperAttribute href)
         {
             var hrefPath = Pathy.Normalize(href.Value.ToString());
             var currentPath = ViewContext.HttpContext.Request.Path.Value;

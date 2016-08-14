@@ -59,10 +59,10 @@ namespace Moon.AspNetCore.Authentication.Basic
             return base.HandleUnauthorizedAsync(context);
         }
 
-        bool IsBasicAuthentication(string header)
+        private bool IsBasicAuthentication(string header)
             => "basic".Equals(header?.Substring(0, 5), StringComparison.OrdinalIgnoreCase);
 
-        NetworkCredential DecodeCredentials(string header)
+        private NetworkCredential DecodeCredentials(string header)
         {
             var bytes = Convert.FromBase64String(header.Substring(6));
             var parts = Encoding.UTF8.GetString(bytes).Split(':');
