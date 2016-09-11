@@ -3,9 +3,6 @@ using Moon.AspNetCore.Mvc.Filters;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    /// <summary>
-    /// <see cref="IMvcBuilder" /> extension methods.
-    /// </summary>
     public static class MvcBuilderExtensions
     {
         /// <summary>

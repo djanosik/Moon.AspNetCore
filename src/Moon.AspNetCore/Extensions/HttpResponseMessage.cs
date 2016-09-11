@@ -3,9 +3,6 @@ using System.Net.Http;
 
 namespace Moon.AspNetCore
 {
-    /// <summary>
-    /// <see cref="HttpResponseMessage" /> extension methods.
-    /// </summary>
     public static class HttpResponseMessageExtensions
     {
         /// <summary>

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
 using Moon.AspNetCore.Authentication.MSOFBA;
 
 namespace Microsoft.AspNetCore.Builder
@@ -7,7 +8,7 @@ namespace Microsoft.AspNetCore.Builder
     /// <summary>
     /// Contains the options used by the <see cref="MSOFBAuthenticationMiddleware" />.
     /// </summary>
-    public class MSOFBAuthenticationOptions
+    public class MSOFBAuthenticationOptions : IOptions<MSOFBAuthenticationOptions>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="MSOFBAuthenticationOptions" /> class.
@@ -31,5 +32,8 @@ namespace Microsoft.AspNetCore.Builder
         /// Gets or sets the parameter name used to pass the return URL.
         /// </summary>
         public string ReturnUrlParameter { get; set; }
+
+        MSOFBAuthenticationOptions IOptions<MSOFBAuthenticationOptions>.Value
+            => this;
     }
 }

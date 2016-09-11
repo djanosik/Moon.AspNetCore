@@ -2,9 +2,6 @@
 
 namespace Microsoft.AspNetCore.Mvc
 {
-    /// <summary>
-    /// <see cref="ModelStateDictionary" /> extension methods.
-    /// </summary>
     public static class ModelStateDictionaryExtensions
     {
         /// <summary>

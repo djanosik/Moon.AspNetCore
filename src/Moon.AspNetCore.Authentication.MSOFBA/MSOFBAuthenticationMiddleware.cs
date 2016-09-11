@@ -1,7 +1,9 @@
 using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
 
 namespace Moon.AspNetCore.Authentication.MSOFBA
 {
@@ -18,10 +20,15 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
         /// </summary>
         /// <param name="next">The next middleware.</param>
         /// <param name="options">The middleware options.</param>
-        public MSOFBAuthenticationMiddleware(RequestDelegate next, MSOFBAuthenticationOptions options)
+        public MSOFBAuthenticationMiddleware(RequestDelegate next, IOptions<MSOFBAuthenticationOptions> options)
         {
             this.next = next;
-            this.options = options;
+            this.options = options.Value;
+
+            if (!this.options.LoginPath.HasValue)
+            {
+                this.options.LoginPath = CookieAuthenticationDefaults.LoginPath;
+            }
         }
 
         /// <summary>
@@ -35,7 +42,7 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
                 await next(context);
             }
 
-            if ((context.User == null) || !context.User.Identity.IsAuthenticated)
+            if (context.User == null || !context.User.Identity.IsAuthenticated)
             {
                 var loginUri = ToAbsolute(context.Request, options.LoginPath);
                 var successUri = ToAbsolute(context.Request, new PathString("/"));
@@ -62,7 +69,7 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
 
             var userAgent = request.Headers["User-Agent"];
 
-            if ((userAgent.Count >= 1) && userAgent[0].Contains("Microsoft Office"))
+            if (userAgent.Count >= 1 && userAgent[0].Contains("Microsoft Office"))
             {
                 return true;
             }

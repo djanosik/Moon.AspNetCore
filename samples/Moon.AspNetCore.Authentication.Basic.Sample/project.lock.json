@@ -1356,56 +1356,52 @@
           }
         }
       },
-      "Moon.Contracts/2.2.3": {
+      "Moon.Contracts/2.2.7": {
         "type": "package",
         "dependencies": {
-          "System.Diagnostics.Tools": "4.0.1",
-          "System.Linq": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1"
+          "NETStandard.Library": "1.6.0"
         },
         "compile": {
-          "lib/netstandard1.5/Moon.Contracts.dll": {}
+          "lib/netstandard1.3/Moon.Contracts.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.5/Moon.Contracts.dll": {}
+          "lib/netstandard1.3/Moon.Contracts.dll": {}
         }
       },
-      "Moon.IO/2.2.3": {
+      "Moon.IO/2.2.7": {
         "type": "package",
         "dependencies": {
-          "Moon.Threading": "2.2.3"
+          "Moon.Threading": "2.2.7"
         },
         "compile": {
-          "lib/netstandard1.5/Moon.IO.dll": {}
+          "lib/netstandard1.3/Moon.IO.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.5/Moon.IO.dll": {}
+          "lib/netstandard1.3/Moon.IO.dll": {}
         }
       },
-      "Moon.Runtime/2.2.3": {
+      "Moon.Runtime/2.2.7": {
         "type": "package",
         "dependencies": {
-          "Moon.Contracts": "2.2.3",
-          "System.Runtime.Extensions": "4.1.0"
+          "Moon.Contracts": "2.2.7"
         },
         "compile": {
-          "lib/netstandard1.5/Moon.Runtime.dll": {}
+          "lib/netstandard1.3/Moon.Runtime.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.5/Moon.Runtime.dll": {}
+          "lib/netstandard1.3/Moon.Runtime.dll": {}
         }
       },
-      "Moon.Threading/2.2.3": {
+      "Moon.Threading/2.2.7": {
         "type": "package",
         "dependencies": {
-          "Moon.Runtime": "2.2.3",
-          "System.Threading.Tasks": "4.0.11"
+          "Moon.Runtime": "2.2.7"
         },
         "compile": {
-          "lib/netstandard1.5/Moon.Threading.dll": {}
+          "lib/netstandard1.3/Moon.Threading.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.5/Moon.Threading.dll": {}
+          "lib/netstandard1.3/Moon.Threading.dll": {}
         }
       },
       "NETStandard.Library/1.6.0": {
@@ -2004,7 +2000,11 @@
           "ref/netstandard1.3/System.IO.Compression.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/netstandard1.3/_._": {
+          "runtimes/unix/lib/netstandard1.3/System.IO.Compression.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2027,7 +2027,7 @@
           "ref/netstandard1.3/System.IO.Compression.ZipFile.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/_._": {}
+          "lib/netstandard1.3/System.IO.Compression.ZipFile.dll": {}
         }
       },
       "System.IO.FileSystem/4.0.1": {
@@ -3347,33 +3347,32 @@
       },
       "Moon.AspNetCore/1.0.0-ci": {
         "type": "project",
-        "framework": ".NETStandard,Version=v1.6",
+        "framework": ".NETStandard,Version=v1.3",
         "dependencies": {
           "Microsoft.AspNetCore.Hosting": "1.0.0",
-          "Moon.Contracts": "2.2.3",
-          "Newtonsoft.Json": "9.0.1",
-          "System.Net.Http": "4.1.0"
+          "Moon.Contracts": "2.2.7",
+          "Newtonsoft.Json": "9.0.1"
         },
         "compile": {
-          "netstandard1.6/Moon.AspNetCore.dll": {}
+          "netstandard1.3/Moon.AspNetCore.dll": {}
         },
         "runtime": {
-          "netstandard1.6/Moon.AspNetCore.dll": {}
+          "netstandard1.3/Moon.AspNetCore.dll": {}
         }
       },
       "Moon.AspNetCore.Authentication.Basic/1.0.0-ci": {
         "type": "project",
-        "framework": ".NETStandard,Version=v1.6",
+        "framework": ".NETStandard,Version=v1.3",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "1.0.0",
           "Microsoft.Extensions.WebEncoders": "1.0.0",
-          "Moon.Contracts": "2.2.3"
+          "Moon.Contracts": "2.2.7"
         },
         "compile": {
-          "netstandard1.6/Moon.AspNetCore.Authentication.Basic.dll": {}
+          "netstandard1.3/Moon.AspNetCore.Authentication.Basic.dll": {}
         },
         "runtime": {
-          "netstandard1.6/Moon.AspNetCore.Authentication.Basic.dll": {}
+          "netstandard1.3/Moon.AspNetCore.Authentication.Basic.dll": {}
         }
       },
       "Moon.AspNetCore.Mvc/1.0.0-ci": {
@@ -3383,7 +3382,7 @@
           "Microsoft.AspNetCore.Mvc": "1.0.0",
           "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0",
           "Moon.AspNetCore": "1.0.0-ci",
-          "Moon.IO": "2.2.3"
+          "Moon.IO": "2.2.7"
         },
         "compile": {
           "netstandard1.6/Moon.AspNetCore.Mvc.dll": {}
@@ -4517,48 +4516,48 @@
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
       ]
     },
-    "Moon.Contracts/2.2.3": {
-      "sha512": "QJZZyrZLXR3WbZNRiT0/jXGj3N8gOpnOV8QoIV0aaKh0Il/8ocz5nTCnGJ6JNz6uPQADqXBQ6HoaOmdLZKwRNA==",
+    "Moon.Contracts/2.2.7": {
+      "sha512": "ilh/NC62fpxMemlDObQ0h2uLf1ZCh+lBaH67tmepBAU+fpLyf6eI0+kLW6/2x43OYReiHA4GDXuTPHun8KNjkg==",
       "type": "package",
-      "path": "Moon.Contracts/2.2.3",
+      "path": "Moon.Contracts/2.2.7",
       "files": [
-        "Moon.Contracts.2.2.3.nupkg.sha512",
+        "Moon.Contracts.2.2.7.nupkg.sha512",
         "Moon.Contracts.nuspec",
         "lib/net46/Moon.Contracts.dll",
-        "lib/netstandard1.5/Moon.Contracts.dll"
+        "lib/netstandard1.3/Moon.Contracts.dll"
       ]
     },
-    "Moon.IO/2.2.3": {
-      "sha512": "TWn1j348XXqKCHnN6Zb6tmJMWmUhyC20cpFudWrEQ8ZiBpGnZ4ep9RxvBFnfy23Ee6mm7BSN62Q4ulhBsz28pg==",
+    "Moon.IO/2.2.7": {
+      "sha512": "v6Zc3rSkctrApQzaJOEQqqJwWcnchsa/jxYSHStL/QMnJq41NeOX6ocBqtmJBme9sCCsGivVLIbPt8eu0RWvzw==",
       "type": "package",
-      "path": "Moon.IO/2.2.3",
+      "path": "Moon.IO/2.2.7",
       "files": [
-        "Moon.IO.2.2.3.nupkg.sha512",
+        "Moon.IO.2.2.7.nupkg.sha512",
         "Moon.IO.nuspec",
         "lib/net46/Moon.IO.dll",
-        "lib/netstandard1.5/Moon.IO.dll"
+        "lib/netstandard1.3/Moon.IO.dll"
       ]
     },
-    "Moon.Runtime/2.2.3": {
-      "sha512": "oF98h5f6Dc54rPdcXgX/04+1QetNVt5cU5QH9tG6SecAuOo5M5TLCvFievX77Og+T3j3vcxqxt0EKrpXNGFd3Q==",
+    "Moon.Runtime/2.2.7": {
+      "sha512": "HkLBzb9rbL4XNaQJtJ1ka5ZzEcPmFLClpuw2vYb6Xsvm98uMrWFdtkGFcUNnRkHZE9QfPk/pvmJJ4z0LAVMMSA==",
       "type": "package",
-      "path": "Moon.Runtime/2.2.3",
+      "path": "Moon.Runtime/2.2.7",
       "files": [
-        "Moon.Runtime.2.2.3.nupkg.sha512",
+        "Moon.Runtime.2.2.7.nupkg.sha512",
         "Moon.Runtime.nuspec",
         "lib/net46/Moon.Runtime.dll",
-        "lib/netstandard1.5/Moon.Runtime.dll"
+        "lib/netstandard1.3/Moon.Runtime.dll"
       ]
     },
-    "Moon.Threading/2.2.3": {
-      "sha512": "nbwXBtDjUsgxWCvw63ywlQv9MJniVdEJs4EDa/HUNZBim1oydjNloKZuQWUSXNUJGct7AwkDuKcQq9adfVWkDg==",
+    "Moon.Threading/2.2.7": {
+      "sha512": "U0W146Ic260x6CaUY3D7A2TQVSyBNZDzkU02JAnQ6eFUhIIUxNHX9rHE8NoHDRwGj1mHrlw55rj8WKmOpx5HBg==",
       "type": "package",
-      "path": "Moon.Threading/2.2.3",
+      "path": "Moon.Threading/2.2.7",
       "files": [
-        "Moon.Threading.2.2.3.nupkg.sha512",
+        "Moon.Threading.2.2.7.nupkg.sha512",
         "Moon.Threading.nuspec",
         "lib/net46/Moon.Threading.dll",
-        "lib/netstandard1.5/Moon.Threading.dll"
+        "lib/netstandard1.3/Moon.Threading.dll"
       ]
     },
     "NETStandard.Library/1.6.0": {

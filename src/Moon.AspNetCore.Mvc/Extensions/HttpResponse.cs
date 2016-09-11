@@ -7,9 +7,6 @@ using Moon.AspNetCore.Mvc;
 
 namespace Microsoft.AspNetCore.Mvc
 {
-    /// <summary>
-    /// <see cref="HttpResponse" /> extension methods.
-    /// </summary>
     public static class HttpResponseExtensions
     {
         /// <summary>

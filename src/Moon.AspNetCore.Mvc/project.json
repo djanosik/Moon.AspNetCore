@@ -12,7 +12,7 @@
 
   "dependencies": {
     "Moon.AspNetCore": "1.0.0-ci",
-    "Moon.IO": "2.2.3",
+    "Moon.IO": "2.2.7",
     "Microsoft.AspNetCore.Mvc": "1.0.0",
     "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0"
   },
