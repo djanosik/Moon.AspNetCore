@@ -27,11 +27,9 @@ namespace Moon.AspNetCore.Authentication.Basic.Sample
         {
             // WARNING! Never ever use the Basic authentication with non-SSL connection.
 
-            app.UseBasicAuthentication(o =>
-            {
-                o.Realm = $"Password: {password}";
-
-                o.Events = new BasicAuthenticationEvents {
+            app.UseBasicAuthentication(new BasicAuthenticationOptions {
+                Realm = $"Password: {password}",
+                Events = new BasicAuthenticationEvents {
                     OnSignIn = c =>
                     {
                         if (c.Password == password)
@@ -43,7 +41,7 @@ namespace Moon.AspNetCore.Authentication.Basic.Sample
 
                         return Task.FromResult(true);
                     }
-                };
+                }
             });
 
             app.UseMvc();
