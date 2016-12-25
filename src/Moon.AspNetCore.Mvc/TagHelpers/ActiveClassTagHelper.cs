@@ -55,7 +55,7 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
         }
 
         private bool CanBeActive(TagHelperAttributeList attributes)
-            => (ActiveClass != null) && attributes.ContainsName("href") && (attributes["href"].Value != null);
+            => ActiveClass != null && attributes.ContainsName("href") && attributes["href"].Value != null;
 
         private bool IsActive(TagHelperAttribute href)
         {

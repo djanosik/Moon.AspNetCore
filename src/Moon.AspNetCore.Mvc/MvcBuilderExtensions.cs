@@ -1,6 +1,8 @@
 ﻿using Moon.AspNetCore.Mvc;
 using Moon.AspNetCore.Mvc.Filters;
 
+// ReSharper disable once CheckNamespace
+
 namespace Microsoft.Extensions.DependencyInjection
 {
     public static class MvcBuilderExtensions

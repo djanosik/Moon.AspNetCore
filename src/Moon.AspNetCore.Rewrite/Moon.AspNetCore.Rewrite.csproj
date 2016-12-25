@@ -2,15 +2,15 @@
   <Import Project="..\..\Common.props" />
   <PropertyGroup>
     <TargetFrameworks>net46;netstandard1.3</TargetFrameworks>
-    <Description>ASP.NET Core middleware that enables an application to use MS-OFBA authentication.</Description>
-    <PackageTags>moon;aspnet;core;authentication;msofba</PackageTags>
+    <Description>Extensions for ASP.NET Core rewriting middleware.</Description>
+    <PackageTags>moon;aspnet;core;rewrite;rewriting</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**\*.cs" />
     <EmbeddedResource Include="**\*.resx" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Rewrite" Version="1.0.0" />
     <PackageReference Include="Moon.Contracts" Version="2.2.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.0.0" />
   </ItemGroup>
 </Project>

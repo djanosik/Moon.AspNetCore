@@ -1,6 +1,8 @@
 using Microsoft.Extensions.Options;
 using Moon.AspNetCore.Authentication.Basic;
 
+// ReSharper disable once CheckNamespace
+
 namespace Microsoft.AspNetCore.Builder
 {
     /// <summary>

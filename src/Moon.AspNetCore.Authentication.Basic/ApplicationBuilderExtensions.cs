@@ -2,9 +2,11 @@
 using Moon;
 using Moon.AspNetCore.Authentication.Basic;
 
+// ReSharper disable once CheckNamespace
+
 namespace Microsoft.AspNetCore.Builder
 {
-    public static class AppBuilderExtensions
+    public static class ApplicationBuilderExtensions
     {
         /// <summary>
         /// Adds a Basic authentication middleware to your web application pipeline.

@@ -2,9 +2,11 @@
 using Moon;
 using Moon.AspNetCore.Authentication.MSOFBA;
 
+// ReSharper disable once CheckNamespace
+
 namespace Microsoft.AspNetCore.Builder
 {
-    public static class AppBuilderExtensions
+    public static class ApplicationBuilderExtensions
     {
         /// <summary>
         /// Adds an MS-OFBA authentication middleware to your web application pipeline.

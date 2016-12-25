@@ -51,7 +51,7 @@ namespace Moon.AspNetCore.Mvc.TagHelpers
         /// <param name="output">The helper output.</param>
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            if ((HotSrc != null) && host.IsDevelopment())
+            if (HotSrc != null && host.IsDevelopment())
             {
                 output.TagName = "script";
                 output.Attributes.SetAttribute("src", $"http://localhost:{HotPort}/{HotSrc.TrimStart('~', '/', '\\')}");

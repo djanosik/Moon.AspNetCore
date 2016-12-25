@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using Moon.AspNetCore.Authentication.MSOFBA;
 
+// ReSharper disable once CheckNamespace
+
 namespace Microsoft.AspNetCore.Builder
 {
     /// <summary>

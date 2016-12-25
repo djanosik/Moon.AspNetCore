@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
+// ReSharper disable once CheckNamespace
+
 namespace Microsoft.AspNetCore.Mvc
 {
     public static class ModelStateDictionaryExtensions
