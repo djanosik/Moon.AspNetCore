@@ -1,5 +1,10 @@
 # Moon.AspNetCore changelog
 
+3.0.1
+
+- All libraries are targeting .NET Standard 1.3.
+- `IUserAccessor` interface moved to `Moon.Security` project.
+
 2.4.1
 
 - Added extensions for ASP.NET Core rewriting middleware.

@@ -1,9 +1,10 @@
-<Project ToolsVersion="15.0">
+<Project>
   <PropertyGroup>
     <Company>Dušan Janošík</Company>
     <Copyright>Copyright © 2016 Dušan Janošík</Copyright>
     <Product>Moon.AspNetCore</Product>
     <PackageIconUrl>https://djanosik.gitlab.io/moon.png</PackageIconUrl>
     <PackageProjectUrl>https://gitlab.com/djanosik/moon-aspnetcore</PackageProjectUrl>
+    <Version>1.0.0-ci</Version>
   </PropertyGroup>
 </Project>

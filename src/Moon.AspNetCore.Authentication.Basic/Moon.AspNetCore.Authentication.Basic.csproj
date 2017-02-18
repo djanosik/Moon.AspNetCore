@@ -1,16 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\..\Common.props" />
   <PropertyGroup>
-    <TargetFrameworks>net46;netstandard1.3</TargetFrameworks>
+    <TargetFramework>netstandard1.3</TargetFramework>
     <Description>ASP.NET Core middleware that enables an application to use Basic authentication.</Description>
     <PackageTags>moon;aspnet;core;authentication;basic</PackageTags>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Moon.Contracts" Version="2.2.8" />
+    <PackageReference Include="Moon.Contracts" Version="3.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="1.0.0" />
   </ItemGroup>
 </Project>
