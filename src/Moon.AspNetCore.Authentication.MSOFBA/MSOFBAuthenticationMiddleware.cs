@@ -35,11 +35,11 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
         /// Processes a request and enables the MS-OFBA authentication.
         /// </summary>
         /// <param name="context">The HTTP settings.</param>
-        public async Task Invoke(HttpContext context)
+        public Task Invoke(HttpContext context)
         {
             if (!IsOFBAAccepted(context.Request))
             {
-                await next(context);
+                return next(context);
             }
 
             if (context.User == null || !context.User.Identity.IsAuthenticated)
@@ -53,6 +53,8 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
                 context.Response.Headers.Add("X-FORMS_BASED_AUTH_RETURN_URL", new[] { successUri });
                 context.Response.StatusCode = 403;
             }
+
+            return Task.CompletedTask;
         }
 
         private string ToAbsolute(HttpRequest request, PathString relativeUrl)
