@@ -27,7 +27,7 @@ namespace Microsoft.AspNetCore.Mvc
         {
             Requires.NotNullOrWhiteSpace(message, nameof(message));
 
-            return response.BadRequest(new ErrorMessage { Message = message });
+            return response.BadRequest(new HttpErrorMessage { Message = message });
         }
 
         /// <summary>
@@ -71,7 +71,7 @@ namespace Microsoft.AspNetCore.Mvc
         {
             Requires.NotNullOrWhiteSpace(message, nameof(message));
 
-            return response.Forbidden(new ErrorMessage { Message = message });
+            return response.Forbidden(new HttpErrorMessage { Message = message });
         }
 
         /// <summary>
@@ -105,7 +105,7 @@ namespace Microsoft.AspNetCore.Mvc
         /// <param name="response">The HTTP response.</param>
         /// <param name="message">The error message to be returned to the client.</param>
         public static HttpException NotFound(this HttpResponse response, string message)
-            => response.NotFound(new ErrorMessage { Message = message });
+            => response.NotFound(new HttpErrorMessage { Message = message });
 
         /// <summary>
         /// Creates an <see cref="HttpException" /> that produces a Not Found (404) response.
@@ -149,7 +149,7 @@ namespace Microsoft.AspNetCore.Mvc
         {
             Requires.NotNullOrWhiteSpace(message, nameof(message));
 
-            return response.Error(new ErrorMessage { Message = message });
+            return response.Error(new HttpErrorMessage { Message = message });
         }
 
         /// <summary>

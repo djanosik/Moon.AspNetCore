@@ -52,9 +52,13 @@ namespace Moon.AspNetCore.Authentication.MSOFBA
                 context.Response.Headers.Add("X-FORMS_BASED_AUTH_REQUIRED", new[] { $"{loginUri}?{returnUrlParameter}={successUri}" });
                 context.Response.Headers.Add("X-FORMS_BASED_AUTH_RETURN_URL", new[] { successUri });
                 context.Response.StatusCode = 403;
+                
+                return Task.CompletedTask;
             }
-
-            return Task.CompletedTask;
+            else
+            {
+                return next(context);
+            }
         }
 
         private string ToAbsolute(HttpRequest request, PathString relativeUrl)

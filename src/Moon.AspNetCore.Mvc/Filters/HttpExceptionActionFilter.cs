@@ -27,7 +27,7 @@ namespace Moon.AspNetCore.Mvc.Filters
             if (httpException?.Result != null)
             {
                 var objectResult = httpException.Result as ObjectResult;
-                var errorMessage = objectResult?.Value as ErrorMessage;
+                var errorMessage = objectResult?.Value as HttpErrorMessage;
 
                 if (errorMessage != null)
                 {

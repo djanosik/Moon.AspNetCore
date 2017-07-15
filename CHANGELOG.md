@@ -1,8 +1,9 @@
 # Moon.AspNetCore changelog
 
-3.0.3
+3.1.0
 
-- Bug fixed in MSOFBA authentication middleware.
+- Fixed bugs in MSOFBA authentication middleware.
+- `ErrorMessage` renamed to `HttpErrorMessage`.
 
 3.0.1
 

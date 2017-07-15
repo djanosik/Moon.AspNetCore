@@ -9,7 +9,7 @@
     <ProjectReference Include="..\Moon.AspNetCore\Moon.AspNetCore.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Moon.IO" Version="3.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.0.0" />
+    <PackageReference Include="Moon.IO" Version="3.1.0" />
   </ItemGroup>
 </Project>
