@@ -53,7 +53,15 @@ namespace Moon.AspNetCore.Mvc.ModelBinding
                 ContentDispositionHeaderValue.TryParse(file.ContentDisposition, out parsedContentDisposition);
 
                 // If there is an <input type="file" ... /> in the form and is left blank.
-                if (parsedContentDisposition == null || file.Length == 0 && string.IsNullOrEmpty(HeaderUtilities.RemoveQuotes(parsedContentDisposition.FileName)))
+
+                if (parsedContentDisposition == null)
+                {
+                    continue;
+                }
+
+                var fileName = HeaderUtilities.RemoveQuotes(parsedContentDisposition.FileName).Value;
+
+                if (file.Length == 0 && string.IsNullOrEmpty(fileName))
                 {
                     continue;
                 }

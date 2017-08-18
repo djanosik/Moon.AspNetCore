@@ -3,7 +3,7 @@
 namespace Moon.AspNetCore.Authentication.Basic
 {
     /// <summary>
-    /// Default values used by <see cref="BasicAuthenticationMiddleware" /> when not defined in
+    /// Default values used by <see cref="BasicAuthenticationHandler" /> when not defined in
     /// <see cref="BasicAuthenticationOptions" />.
     /// </summary>
     public static class BasicAuthenticationDefaults

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Moon.AspNetCore.Mvc.Sample.Pages.Home
+namespace Moon.AspNetCore.Mvc.Sample.Views.Home
 {
     public class HomeController : Controller
     {

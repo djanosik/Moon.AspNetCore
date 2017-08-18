@@ -1,26 +1,14 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Drawing;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Options;
-using Moon.AspNetCore.Authentication.MSOFBA;
 
-// ReSharper disable once CheckNamespace
-
-namespace Microsoft.AspNetCore.Builder
+namespace Moon.AspNetCore.Authentication.MSOFBA
 {
     /// <summary>
     /// Contains the options used by the <see cref="MSOFBAuthenticationMiddleware" />.
     /// </summary>
-    public class MSOFBAuthenticationOptions : IOptions<MSOFBAuthenticationOptions>
+    public class MSOFBAuthenticationOptions : AuthenticationSchemeOptions
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MSOFBAuthenticationOptions" /> class.
-        /// </summary>
-        public MSOFBAuthenticationOptions()
-        {
-            LoginPath = CookieAuthenticationDefaults.LoginPath;
-            ReturnUrlParameter = CookieAuthenticationDefaults.ReturnUrlParameter;
-        }
-
         /// <summary>
         /// Gets or sets the path to login page used by MS-OFBA.
         /// </summary>
@@ -31,11 +19,23 @@ namespace Microsoft.AspNetCore.Builder
         public PathString LoginPath { get; set; }
 
         /// <summary>
+        /// Specifies the path to log-in redirect URL which is used to indicate successful login
+        /// </summary>
+        /// <remarks>
+        /// On seeing the redirect, the client determines that this URI matches that returned in response to the 
+        /// Protocol Discovery request. In case the URIs match, the client assumes success, follows the 
+        /// redirect, and closes the form.
+        /// </remarks>
+        public PathString LoginSuccessPath { get; set; }
+
+        /// <summary>
         /// Gets or sets the parameter name used to pass the return URL.
         /// </summary>
         public string ReturnUrlParameter { get; set; }
 
-        MSOFBAuthenticationOptions IOptions<MSOFBAuthenticationOptions>.Value
-            => this;
+        /// <summary>
+        /// Gets or sets the size of the OFBA log-in dialog.
+        /// </summary>
+        public Size DialogSize { get; set; }
     }
 }

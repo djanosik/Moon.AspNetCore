@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Moon.AspNetCore.Authentication.Basic.Sample.Pages.Home
+namespace Moon.AspNetCore.Authentication.Basic.Sample.Views.Home
 {
     public class HomeController : Controller
     {

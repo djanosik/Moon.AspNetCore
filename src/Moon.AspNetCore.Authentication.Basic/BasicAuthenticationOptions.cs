@@ -1,38 +1,32 @@
-using Microsoft.Extensions.Options;
-using Moon.AspNetCore.Authentication.Basic;
+using Microsoft.AspNetCore.Authentication;
 
-// ReSharper disable once CheckNamespace
-
-namespace Microsoft.AspNetCore.Builder
+namespace Moon.AspNetCore.Authentication.Basic
 {
     /// <summary>
-    /// Contains the options used by the <see cref="BasicAuthenticationMiddleware" />.
+    /// Contains the options used by the <see cref="BasicAuthenticationHandler" />.
     /// </summary>
-    public class BasicAuthenticationOptions : AuthenticationOptions, IOptions<BasicAuthenticationOptions>
+    public class BasicAuthenticationOptions : AuthenticationSchemeOptions
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="BasicAuthenticationOptions" /> class.
         /// </summary>
         public BasicAuthenticationOptions()
         {
-            Realm = BasicAuthenticationDefaults.Realm;
-            AuthenticationScheme = BasicAuthenticationDefaults.AuthenticationScheme;
             Events = new BasicAuthenticationEvents();
-            AutomaticAuthenticate = true;
-            AutomaticChallenge = true;
         }
 
         /// <summary>
         /// Gets or sets the Realm string, typically displayed in login dialog of the client application.
         /// </summary>
-        public string Realm { get; set; }
+        public string Realm { get; set; } = BasicAuthenticationDefaults.Realm;
 
         /// <summary>
         /// Gets or sets delegates called during Basic authentication process.
         /// </summary>
-        public IBasicAuthenticationEvents Events { get; set; }
-
-        BasicAuthenticationOptions IOptions<BasicAuthenticationOptions>.Value
-            => this;
+        public new BasicAuthenticationEvents Events
+        {
+            get => (BasicAuthenticationEvents)base.Events;
+            set => base.Events = value;
+        }
     }
 }

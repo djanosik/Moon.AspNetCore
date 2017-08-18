@@ -1,5 +1,10 @@
 # Moon.AspNetCore changelog
 
+4.0.0
+
+- Compatibility with ASP.NET Core 2.0.
+- More options to configure MS-OFBA authentication.
+
 3.1.0
 
 - Fixed bugs in MSOFBA authentication middleware.
