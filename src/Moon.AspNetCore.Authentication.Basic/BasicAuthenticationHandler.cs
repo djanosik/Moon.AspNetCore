@@ -42,9 +42,11 @@ namespace Moon.AspNetCore.Authentication.Basic
                         var ticket = new AuthenticationTicket(context.Principal, context.Properties, Scheme.Name);
                         return AuthenticateResult.Success(ticket);
                     }
+
+                    return AuthenticateResult.Fail("No principal.");
                 }
 
-                return AuthenticateResult.Success(null);
+                return AuthenticateResult.NoResult();
             }
             catch (Exception ex)
             {
